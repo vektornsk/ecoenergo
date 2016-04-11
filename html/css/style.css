@@ -45,3 +45,66 @@ body {
   display: block;
   margin: auto;
 }
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  height: auto !important;
+  overflow: hidden;
+}
+.wrapper:after {
+  content: "";
+  height: 836px;
+  display: block;
+}
+.footer {
+  position: relative;
+  height: 836px;
+  margin-top: -836px;
+}
+.header {
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #11456a), color-stop(100%, #0f4d7a));
+  background: linear-gradient(to bottom, #11456a 0%, #0f4d7a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#11456a', endColorstr='#0f4d7a', GradientType=0);
+  height: 673px;
+}
+.header__top {
+  padding-top: 38px;
+}
+.logo {
+  width: 269px;
+  position: relative;
+  overflow: hidden;
+}
+.logo__link {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.logo__head {
+  position: absolute;
+  left: -9999px;
+}
+.phone {
+  width: 225px;
+  height: 57px;
+  border: 2px solid #265475;
+  font-size: 20px;
+  cursor: pointer;
+  float: right;
+  overflow: hidden;
+  position: relative;
+}
+.phone:hover::after {
+  background-position: -32px 0;
+}
+.phone::after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 31px;
+  height: 43px;
+  background: url('../img/icons/phone.png') no-repeat;
+  top: 5px;
+  right: 5px;
+}
