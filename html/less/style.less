@@ -27,10 +27,15 @@
 	background: -ms-linear-gradient(top, rgba(17,69,106,1) 0%, rgba(15,77,122,1) 100%);
 	background: linear-gradient(to bottom, rgba(17,69,106,1) 0%, rgba(15,77,122,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11456a', endColorstr='#0f4d7a', GradientType=0 );
-	height: 673px; //todo
 }
 .header__top {
 	padding-top: 38px;
+	margin-bottom: 30px;
+}
+
+.header__bottom {
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 //=== Логотип ===
@@ -54,7 +59,37 @@
 //=== Поиск ===
 
 .search {
-	
+	width: 421px;
+	border-bottom: 2px solid rgba(38, 84, 117, 0.5);
+	position: relative;
+	&__inp {
+		border: 0;
+		background-color: #11456a;
+		padding-left: 12px;
+		padding-right: 50px;
+		line-height: 55px;
+		width: 359px;
+		color: #8298a7;
+		&::-webkit-input-placeholder {color:#8298a7;}
+		&::-moz-placeholder          {color:#8298a7;}
+		&:-moz-placeholder           {color:#8298a7;}
+		&:-ms-input-placeholder      {color:#8298a7;}
+		
+		&:focus {
+			background: #fff;
+			outline: none;
+			color: #000;
+		}
+	}
+	&__btn {
+		width: 23px;
+		height: 23px;
+		border: 0;
+		background: url("../img/icons/search.svg") no-repeat;
+		position: absolute;
+		right: 22px;
+		bottom: 15px;
+	}
 }
 
 //=== Телефон ===
@@ -62,12 +97,15 @@
 .phone {
 	width: 225px;
 	height: 57px;
+	padding-left: 14px;
 	border: 2px solid @border-color;
 	font-size: 20px;
 	cursor: pointer;
 	float: right;
 	overflow: hidden;
 	position: relative;
+	font-family: @font-bold;
+	line-height: 57px;
 	&:hover {
 		&::after{
 			background-position: -32px 0;
@@ -83,7 +121,171 @@
 		top: 5px;
 		right: 5px;
 	}
+	&__number {
+		color: #fff;
+		&_color {
+			color: #8298a7;
+		}
+	}
 }
+
+
+//=== Навигация ===
+
+#nav {
+	background-color: #0d4e7b;
+}
+
+.nav {
+	height: 62px;	
+}
+
+//=== Меню ===
+
+.menu {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	padding-left: 15px;
+	padding-right: 15px;
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+		list-style: none;
+		font-family: @font-bold;
+		font-size: 18px;
+		width: 174px;
+		text-align: center;
+		
+		&.active {
+			background-color: @color-orange;
+		}
+		
+		&:not(:last-child) {
+			border-right: 1px solid rgba(0, 0, 0, 0.3);
+		}
+		
+		&_catalog {
+			background-color: @color-green;
+			width: 263px;
+			text-transform: uppercase;
+			font-family: @font-neris;
+			font-size: 24px;
+			position: relative;
+			text-align: left;
+			border-right: none !important;
+			
+			.menu__link {
+				padding-left: 43px;
+				
+				&:hover {
+					background-color: rgba(0, 128, 0, 0);
+				}
+			}
+			
+			&::before {
+				content: " ";
+				display: block;
+				background: url(../img/icons/catalog.png) no-repeat;
+				width: 21px;
+				height: 16px;
+				position: absolute;
+				bottom: 22px;
+				left: 10px;
+			}
+			
+			&::after {
+				content: " ";
+				display: block;
+				background: url(../img/icons/arrow.png) no-repeat;
+				width: 9px;
+				height: 5px;
+				position: absolute;
+				right: 13px;
+				bottom: 27px;
+			}
+		}
+	}
+	&__link {
+		display: block;
+		color: #ffffff;
+		line-height: 62px;
+		position: relative;
+		z-index: 1;
+		
+		&_arrow {
+			&::after {
+				content: " ";
+				display: block;
+				background: url(../img/icons/arrow.png) no-repeat;
+				width: 9px;
+				height: 5px;
+				position: absolute;
+				right: 13px;
+				bottom: 27px;
+			}
+		}
+		
+		&:hover {
+			text-decoration: none;
+			color: #fff;
+			background-color: @color-orange;
+			
+		}
+	}
+}
+
+.menu-sub {
+	display: none; //todo
+}
+
+
+//=== Фильтр хед ===
+.head-filter {
+	position: relative;
+	&__img {
+		position: absolute;
+		top: 85px;
+		left: 50%;
+		&.loop { margin-left: -48px;}
+		&.doc { margin-left: -36.5px;}
+		&.mic { margin-left: -55px;}
+	}
+	
+	&__link {
+		display: block;
+		border: 8px solid @border-color;
+		text-align: center;
+		height: 425px;
+		color: #ffffff;
+		font-size: 24px;
+		text-transform: uppercase;
+		font-family: nerisblack;
+		position: relative;
+		z-index: 1;
+		padding-top: 240px;
+		
+		&::after {
+			content: " ";
+			display: block;
+			height: 8px;
+			width: 130px;
+			margin-top: 22px;
+			background-color: @color-green;
+			position: absolute;
+			left: 50%;
+			margin-left: -65px;
+		}
+		
+		&:hover {
+			border-color: @color-green;
+			text-decoration: none;
+			color: #ffffff;
+			box-shadow: 2px 4px 15px 0.00px rgba(0, 0, 0, 0.52);
+		}
+	}
+}
+
 
 // ========== @MEDIA ========== 
 @import "media";
