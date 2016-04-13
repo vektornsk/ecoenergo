@@ -13,8 +13,9 @@
 @body-font: 10px;
 @body-font-family: "RobotoRegular", @helvetica;
 
-
+@color-text: #2e2e2e;
 @border-color: #265475;
+@color-blue: #11456a;
 @color-orange: #f85e08;
 @color-green: #a4ce4d;
 
@@ -45,6 +46,7 @@ body {
 	font-size: 16px;
 	font-family: @font-reg;
 	background-color: #e4eaf0;
+	color: @color-text;
 }
 
 .cf {
@@ -73,3 +75,9 @@ body {
 	margin: auto;
 }
 
+a {
+	&:focus {
+		text-decoration: none;
+		color: #fff;
+	}
+}
