@@ -161,12 +161,16 @@
 			background-color: @color-orange;
 		}
 		
+		&.action {
+			background-color: @color-orange;
+		}
+		
 		&:not(:last-child) {
 			border-right: 1px solid rgba(0, 0, 0, 0.3);
 		}
 		
 		&_catalog {
-			background-color: @color-green;
+			background-color: @color-green !important;
 			width: 263px;
 			text-transform: uppercase;
 			font-family: @font-neris;
@@ -174,6 +178,7 @@
 			position: relative;
 			text-align: left;
 			border-right: none !important;
+			margin-right: 7px;
 			
 			.menu__link {
 				padding-left: 43px;
@@ -190,7 +195,7 @@
 				width: 21px;
 				height: 16px;
 				position: absolute;
-				bottom: 22px;
+				top: 23px;
 				left: 10px;
 			}
 			
@@ -202,7 +207,7 @@
 				height: 5px;
 				position: absolute;
 				right: 13px;
-				bottom: 27px;
+				top: 27px;
 			}
 		}
 	}
@@ -235,12 +240,220 @@
 	}
 }
 
+//=== Подменю ===
+
+.menu-open {
+	
+	&.open {
+		.menu-sub {
+			display: block;
+		}
+	}
+	
+	&:hover {
+		.menu-sub {
+			display: block;
+		}
+		
+	}
+}
+
+.menu__item_catalog {
+	.menu-sub {
+		display: none;
+		background-color: #ffffff;
+		margin-left: 8px;
+		border-left: none;
+		position: relative;
+		z-index: 3;
+		
+		&__item {
+			list-style: none;
+			
+			&:not(:last-child) {
+				border-bottom: 1px solid #dadada;
+			}
+			
+			&.action {
+				background-color: @color-green;
+				
+				.menu-sub__link {
+					color: #ffffff;
+					&:after {
+						background-position: -5px 0;
+					}
+				}
+			}
+		}
+		
+		&__link {
+			font-size: 16px;
+			font-family: @font-bold;
+			display: block;
+			height: 75px;
+			line-height: 75px;
+			padding-left: 12px;
+			position: relative;
+			
+			&.menu-sub-open {
+				&:after {
+					content: " ";
+					display: block;
+					background: url(../img/icons/arrow-r.png);
+					width: 5px;
+					height: 9px;
+					position: absolute;
+					top: 33px;
+					right: 14px;
+				}
+				
+				&:hover {
+					&:after {
+						background-position: -5px 0;
+					}
+				}
+			}
+			
+			&:hover {
+				text-decoration: none;
+				background-color: @color-green;
+				color: #ffffff;
+			}
+		}
+	}
+}
+
 .menu-sub {
-	display: none; //todo
+	display: none;
+	background-color: #ffffff;
+	border-left: 8px solid @color-orange;
+	position: relative;
+	z-index: 3;
+	
+	&_size {
+		width: 230px;
+	}
+	
+	&__item {
+		list-style: none;
+		&:not(:last-child) {
+			border-bottom: 1px solid #dadada;
+		}
+	}
+
+	&__link {
+		display: block;
+		font-size: 16px;
+		font-family: @font-reg;
+		line-height: 36px;
+		white-space: nowrap;
+		padding-left: 24px;
+		padding-right: 25px;
+		color: #38689c;
+		line-height: 55px;
+		text-align: left;
+
+		&:hover {
+			text-decoration: none;
+			background-color: #f2f2f2;
+			color: #38689c;
+		}
+	}
 }
 
 
+//=== Подменю меню ===
+.menu-sub-open {
+	position: relative;
+	
+	&:hover {
+		.menu-sub-sub {
+			display: block;
+		}
+	}
+}
+
+
+.menu-sub-sub {
+	display: none;
+	position: absolute;
+	background-color: #ffffff;
+	left: 255px;
+	top: 0;
+	border-left: 8px solid @color-green;
+	
+	&__item {
+		list-style: none;
+		
+		&:not(:last-child) {
+			border-bottom: 1px solid #dadada;
+		}
+	}
+	
+	&__link {
+		display: block;
+		font-size: 16px;
+		font-family: @font-reg;
+		line-height: 36px;
+		white-space: nowrap;
+		padding-left: 24px;
+		padding-right: 25px;
+		color: #38689c;
+		line-height: 55px;
+		text-transform: none;
+		
+		&:hover {
+			text-decoration: none;
+			background-color: #f2f2f2;
+			color: #38689c;
+		}
+	}
+}
+
+//=== Меню компании ===
+
+.menu-company {
+	overflow: hidden;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	padding-left: 22px;
+	position: relative;
+	&__item {
+		list-style: none;	
+		float: left;
+		
+		padding-right: 24px;
+	}
+	
+	&__link {
+		display: block;
+	}
+	
+	&__img {
+		filter: grayscale();
+		margin-bottom: 8px;
+		
+		&_poz {
+			position: absolute;
+			top: 130px;
+		}
+		&_poz2 {
+			margin-top: 14px;
+			margin-right: 10px;
+		}
+		
+		&:hover {
+			filter: none;
+		}
+	}
+}
+
+
+
+
+
 //=== Фильтр хед ===
+
 .head-filter {
 	position: relative;
 	&__img {
