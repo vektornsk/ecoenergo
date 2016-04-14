@@ -266,6 +266,7 @@
 		border-left: none;
 		position: relative;
 		z-index: 3;
+		width: 255px;
 		
 		&__item {
 			list-style: none;
@@ -329,6 +330,8 @@
 	border-left: 8px solid @color-orange;
 	position: relative;
 	z-index: 3;
+	box-shadow: 5px 9px 10px 0.00px rgba(0, 0, 0, 0.35);
+	width: 174px;
 	
 	&_size {
 		width: 230px;
@@ -336,6 +339,7 @@
 	
 	&__item {
 		list-style: none;
+		
 		&:not(:last-child) {
 			border-bottom: 1px solid #dadada;
 		}
@@ -381,6 +385,7 @@
 	left: 255px;
 	top: 0;
 	border-left: 8px solid @color-green;
+	box-shadow: 5px 9px 10px 0.00px rgba(0, 0, 0, 0.35);
 	
 	&__item {
 		list-style: none;
@@ -525,6 +530,11 @@
 			font-size: 20px;
 			color: @color-text;
 			line-height: 30px;
+			
+			&:hover {
+				text-decoration: none;
+				color: @color-blue-nav;
+			}
 		}
 	}
 	&__item {
@@ -533,6 +543,10 @@
 			font-size: 18px;
 			color: @color-text;
 			line-height: 30px;
+			
+			&:hover {
+				color: @color-blue-nav;
+			}
 		}
 	}
 }
