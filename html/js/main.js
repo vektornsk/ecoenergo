@@ -2,20 +2,20 @@ $(function() {
 
 //=== Меню ховер ===
 	
-	$(".menu-sub__item").hover(
+	$(".menu-sub").hover(
 		function() {
-			$(this).parent().parent().addClass("action")
+			$(this).parent().addClass("action")
 		}, function() {
-			$(this).parent().parent().removeClass("action")
+			$(this).parent().removeClass("action")
 			
 		}
 	);
 	
-	$(".menu-sub-sub__item").hover(
+	$(".menu-sub-sub").hover(
 		function() {
-			$(this).parent().parent().addClass("action")
+			$(this).parent().addClass("action")
 		}, function() {
-			$(this).parent().parent().removeClass("action")
+			$(this).parent().removeClass("action")
 			
 		}
 	);
