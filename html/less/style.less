@@ -179,6 +179,7 @@
 			text-align: left;
 			border-right: none !important;
 			margin-right: 7px;
+			z-index: 3;
 			
 			.menu__link {
 				padding-left: 43px;
@@ -262,8 +263,8 @@
 	.menu-sub {
 		display: none;
 		background-color: #ffffff;
-		margin-left: 8px;
 		border-left: none;
+		margin-left: 8px;
 		position: relative;
 		z-index: 3;
 		width: 255px;
@@ -744,9 +745,9 @@
 
 
 
-//======================================== Контент ===================================================>
+//======================================== Контент index ===================================================>
 
-.margin {
+.margin-98 {
 	margin-top: 98px;
 }
 
@@ -963,7 +964,6 @@
 	}
 }
 
-
 .release-more {
 	
 	&__link {
@@ -993,6 +993,214 @@
 		}
 	}
 }
+
+
+//======================================== Контакты ===================================================>
+
+.margin-40 {
+	margin-top: 40px;
+}
+.city {
+	position: absolute;
+	
+	.tabs {
+		font-size: 0;
+		&__item {
+			display: inline-block;
+			list-style: none;
+			font-size: 20px;
+			font-family: @font-bold;
+			width: 157px;
+			height: 58px;
+			text-align: center;
+			color: @color-blue-head;
+			border: 2px solid @color-blue-head;
+			line-height: 58px;
+			cursor: pointer;
+			
+			&.active {
+				background-color: @color-blue-head;
+				color: #fff;
+			}
+		}
+	}
+}
+
+//todo tabs
+
+.tabs__content {
+	display: none !important; 
+}
+.tabs__content.active {
+	display: flex !important; 
+}
+
+
+.contacts {
+	display: flex;
+	
+	
+	&__left {
+		margin-top: 130px;
+		margin-right: 37px;
+	}
+	
+	&__right {
+		
+	}
+	
+	.address__item {
+		font-size: 18px;
+		color: @color-blue-head;
+		margin-bottom: 15px;
+		height: 42px;
+		
+		span {
+			color: @color-blue-head;
+		}
+	}
+}
+
+//map
+
+.map {
+	margin-bottom: 45px;
+}
+
+//todo call
+
+.call {
+	&__item {
+		width: 391px;
+		height: 148px;
+		border: 8px solid @color-blue-light;
+		margin-top: 35px;
+		position: relative;
+		padding-top: 40px;
+		padding-left: 175px;
+		overflow: hidden;
+	}
+	&__link {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 3;
+		top: 0;
+		left: 0;
+	}
+	&__name {
+		color: @color-blue-head;
+		font-size: 20px;
+		
+		
+		&_specialist {
+			&:before {
+				content: " ";
+				display: inline-block;
+				background: url(../img/icons/mic-b.svg);
+				width: 110px;
+				height: 103px;
+				margin-right: 33px;
+				position: absolute;
+				left: 24px;
+				top: 16px;
+			}
+		}
+		&_existence {
+			&:before {
+				content: " ";
+				display: inline-block;
+				background: url(../img/icons/doc-b.svg);
+				width: 73px;
+				height: 97px;
+				margin-right: 54px;
+				position: absolute;
+				left: 40px;
+				top: 18px;
+			}
+		}
+	}
+}
+
+
+
+//======================================== Heads Заголовок ===================================================>
+
+.heads {
+	
+	&__h2 {
+		margin-top: 34px;
+		margin-bottom: 34px;
+		padding-left: 10px;
+		font-family: @font-neris;
+		color: @color-blue-head;
+		border-left: 6px solid @color-green;
+		line-height: 27px;
+		height: 35px;
+		font-size: 50px;
+		text-transform: uppercase;
+		
+	}
+}
+
+//======================================== Хлеб ===================================================>
+
+.links {
+	
+	&__list {
+		list-style: none;
+		font-size: 0;
+	}
+	&__item {
+		display: inline-block;
+		font-size: 14px;
+		height: 26px;
+		line-height: 26px;
+		color: #115382;
+	}
+	&__link {
+		color: #ffffff;
+		
+		span {
+			background: @color-blue-head;
+			line-height: 26px;
+			display: inline-block;
+			padding-left: 12px;
+			padding-right: 6px;
+		}
+		
+		&:hover {
+			color: #fff;
+			text-decoration: none;
+			
+			span {
+				background: @color-orange;
+			}
+			
+			&:after {
+				background-position: -16px 0;
+			}
+		}
+		
+		&:after {
+			content: " ";
+			display: inline-block;
+			background: url(../img/icons/arrow-links.png);
+			width: 16px;
+			height: 26px;
+			position: relative;
+			top: 8px;
+			margin-right: 10px;
+		}
+	}
+	
+}
+
+
+
+
+
+
 
 // ========== @MEDIA ========== 
 @import "media";

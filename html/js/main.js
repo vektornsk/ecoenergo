@@ -30,7 +30,10 @@ $(function() {
 			$('.menu__item_catalog').removeClass('open');
 		} else {
 			$('#nav').css({position: 'static', top: '0px', 'box-shadow': 'none'});
-			$('.menu__item_catalog').addClass('open');
+			if($('.menu__item_catalog').hasClass('js-catalog')){
+				$('.menu__item_catalog').addClass('open');
+			}
+			
 			
 		}
 	});
@@ -51,10 +54,18 @@ $(function() {
 				bgColor = "release__bg-color1";
 			}
 			
-			$(this).next().next().addClass(bgColor)
+			$(this.parentNode).find('.release__bg').addClass(bgColor)
 		}, function() {
-			$(this).next().next().removeClass(bgColor)	
+			$(this.parentNode).find('.release__bg').removeClass(bgColor)	
 		}
 	);
+	
+//=== tabs ===
+	
+	$('ul.tabs').on('click', 'li:not(.active)', function() {
+		$(this)
+			.addClass('active').siblings().removeClass('active')
+			.parent('contacts-wrap').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+	});
 
 }); //$
