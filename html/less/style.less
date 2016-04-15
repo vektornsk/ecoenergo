@@ -770,7 +770,7 @@
 	overflow: hidden;
 	margin-bottom: 30px;
 	&:hover {
-		box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.41);
+		box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.41);
 		
 		.product__text {
 			background-color: @color-green;
@@ -820,6 +820,10 @@
 		height: 100%;
 		position: absolute;
 		z-index: 2;
+		
+		&:hover {
+			box-shadow: inset 0px -5px 0px 0px @color-green;
+		}
 	}
 	
 	&__text {
@@ -842,7 +846,6 @@
 }
 
 //=== больше ===
-
 
 .more-link {
 	height: 66px;	
@@ -889,8 +892,107 @@
 	}
 }
 
+//=== Проекты главная ===
+
+.release {
+	position: relative;
+	&__link {
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 2;
+		
+		&:hover {
+			.release__bg {
+				background: red !important;
+			}
+		}
+	}
+	
+	&__text {
+		padding-top: 63px;
+		padding-left: 46px;
+		padding-bottom: 70px;
+		color: #ffffff;
+		z-index: 1;
+		position: relative;
+		height: 244px;
+		
+		&_black {
+			color: #2e2e2e;
+			width: 68%;
+		}
+	}
+	
+	&__head {
+		font-family: @font-bold;
+		font-size: 20px;
+		line-height: 25px;
+		display: block;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+	
+	&__info {
+		font-family: @font-reg;
+		font-size: 18px;
+		line-height: 14px;
+	}
+	
+	&__bg {
+		position: absolute;
+		width: 100000px;
+		height: 244px;
+		background: url(../img/bg.jpg);
+		top: 0px;
+		
+		&_left {
+			margin-left: -99251px;
+		}
+		&_center {
+			background: url(../img/bg2.jpg);
+			margin-left: -1000px
+		}
+		&-color1 {
+			background: #0f4e7a;
+		}
+		&-color2 {
+			background: #a4ce4d;
+		}
+	}
+}
 
 
+.release-more {
+	
+	&__link {
+		font-family: @font-neris;
+		text-transform: uppercase;
+		font-size: 30px;
+		line-height: 244px;
+		color: @color-blue-head;
+		margin-left: 66px;
+		
+		&:hover {
+			text-decoration: none;
+			&:before {
+				background-position: -35px 0px;
+			}
+		}
+		
+		&:before {
+			content: " ";
+			display: inline-block;
+			width: 35px;
+			height: 35px;
+			background: url(../img/icons/release-more.png);
+			position: relative;
+			left: -12px;
+			top: 5px;
+		}
+	}
+}
 
 // ========== @MEDIA ========== 
 @import "media";

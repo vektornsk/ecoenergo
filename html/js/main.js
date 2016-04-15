@@ -34,5 +34,27 @@ $(function() {
 			
 		}
 	});
+	
+	
+//=== proect ===
+	
+	var bgColor = "release__bg-color1";
+	
+	$('.release__link').hover(
+			
+		function() {
+			
+			if($(this).hasClass('release__link_color')){
+				
+				bgColor = "release__bg-color2";
+			}else {
+				bgColor = "release__bg-color1";
+			}
+			
+			$(this).next().next().addClass(bgColor)
+		}, function() {
+			$(this).next().next().removeClass(bgColor)	
+		}
+	);
 
 }); //$
