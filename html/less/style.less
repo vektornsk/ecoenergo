@@ -438,6 +438,7 @@
 	&__img {
 		filter: grayscale();
 		margin-bottom: 8px;
+		opacity: .7;
 		
 		&_poz {
 			position: absolute;
@@ -450,6 +451,7 @@
 		
 		&:hover {
 			filter: none;
+			opacity: 1;
 		}
 	}
 }
@@ -1122,6 +1124,206 @@
 	}
 }
 
+//======================================== Каталог ===================================================>
+
+.catalog {
+		
+	&__item {
+		margin-bottom: 47px;
+	}
+	
+	&__img {
+		width: 100%;
+		height: auto;
+	}
+	
+	&__list {
+		background-color: #ffffff;
+		padding: 35px 34px 0;
+		
+		height: 420px;
+		
+		&__head {
+			font-size: 30px;
+			font-family: @font-neris;
+			text-transform: uppercase;
+			line-height: 36px;
+			color: #145581;
+			border-bottom: 2px solid @color-blue-head;
+			padding-bottom: 12px;
+			margin-bottom: 20px;
+		}
+		
+		&__item {
+			font-size: 18px;
+			line-height: 34px;
+		}
+	}
+	
+	&__link {
+		color: @color-blue-head;
+		
+		&:focus {
+			color: @color-blue-head;
+		}
+	}
+}
+
+.catalog-box {
+	&:hover {
+		box-shadow: 0px 8px 0px 0px #a4ce4d, 0px 12px 8px 0.00px rgba(0, 0, 0, 0.75);
+	}
+}
+
+.catalog_call {
+	display: flex;
+	margin: 0 15px 80px 15px;
+	justify-content: space-between;
+	
+	.call__item {
+		width: 555px;
+		height: 164px;
+		margin-top: 0;
+		padding-top: 60px;
+		padding-left: 220px;
+		
+	}
+	.call__name_specialist {
+		&:before {
+			left: 82px;
+			top: 26px;
+		}
+	}
+	.call__name_existence {
+		&:before {
+			left: 126px;
+			top: 26px;
+		}
+	}
+}
+
+//======================================== Форма поиска ===================================================>
+
+.search-box {
+	background-color: #ffffff;
+	margin-bottom: 47px;
+	
+	&__head {
+		text-align: center;
+		display: block;
+		width: 523px;
+		height: 73px;
+		margin: 0 auto;
+		background: #105281;
+		color: #ffffff;
+		font-size: 30px;
+		font-family: @font-neris;
+		text-transform: uppercase;
+		line-height: 73px;
+		position: relative;
+
+		&:before {
+			content: " ";
+			display: inline-block;
+			height: 73px;
+			width: 70px;
+			background: url(../img/search-box.png);
+			position: absolute;
+			left: 0;
+		}
+		&:after {
+			content: " ";
+			display: inline-block;
+			height: 73px;
+			width: 70px;
+			background: url(../img/search-box.png);
+			position: absolute;
+			background-position: -70px 0;
+			right: 0;
+		}
+	}
+}
+
+.search-box__form {
+	margin-top: 42px;
+	padding: 0 34px 32px;
+	&_top {
+		position: relative;
+		margin-bottom: 42px;
+	}
+	
+	&_bottom {
+		position: relative;
+	}
+	
+	label {
+		position: absolute;
+		top: -35px;
+		font-size: 16px;
+		line-height: 43px;
+		color: #2e2e2e;
+	}
+	select {
+		width: 353px;
+		height: 57px;
+		border: 1px solid #80a2c3;
+		margin-right: 28px;
+		padding: 0 0 0 12px;
+	}
+
+	input[type="number"] {
+		border: 1px solid #80a2c3;
+		height: 57px;
+		width: 135px;
+		padding: 0 0 0 12px;
+		&:not(:last-child){
+			margin-right: 26px;
+		}
+		
+	}
+	
+	
+	.area {
+		width: 190px !important;
+	}
+	.go-form {
+		height: 57px;
+		background-color: #f85e08;
+		border: none;
+		width: 300px;
+		color: #ffffff;
+		font-size: 24px;
+		font-family: @font-bold;
+		position: relative;
+		margin-left: -20px;
+	}
+	.go-form_loop {
+		display: inline-block;
+		&:before {
+			content: " ";
+			width: 20px;
+			height: 20px;
+			background: url(../img/icons/search-form.svg) no-repeat;	
+			background-size: 20px 20px;
+			display: inline-block;
+			position: relative;
+			z-index: 1;
+			top: 3px;
+			left: 90px;
+			opacity: 0.5;
+		}
+		
+		&:hover {
+			.go-form {
+				background-color: #e05409;
+			}
+			
+			&:before {
+				opacity: 1;
+			}
+		}
+	}
+}
 
 
 //======================================== Heads Заголовок ===================================================>

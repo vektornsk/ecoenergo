@@ -63,9 +63,23 @@ $(function() {
 //=== tabs ===
 	
 	$('ul.tabs').on('click', 'li:not(.active)', function() {
+		console.log($(this));
 		$(this)
 			.addClass('active').siblings().removeClass('active')
-			.parent('contacts-wrap').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+			.offsetParent().offsetParent().find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+	});
+	
+//=== map ===
+	
+	ymaps.ready(function(){
+		var myMap = new ymaps.Map("mapM", {
+			center:[55.76, 37.64], // Москва
+			zoom:10
+		});
+		var myMap2 = new ymaps.Map("mapN", {
+			center:[55.03, 82.92], // Новосибирск
+			zoom:10
+		});
 	});
 
 }); //$
