@@ -1296,16 +1296,37 @@
 		height: 57px;
 		border: 1px solid #80a2c3;
 		margin-right: 28px;
+		padding: 0 12px 0 12px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		appearance: none!important;
+		background: url(../img/icons/select-arrow.png) no-repeat right center;
+		
+		&:focus {
+			border: 2px solid @border-color;
+			outline: none; 
+			
+		}
+	}
+	option {
 		padding: 0 0 0 12px;
+		
 	}
 
-	input[type="number"] {
+	input[type="text"] {
 		border: 1px solid #80a2c3;
 		height: 57px;
 		width: 135px;
 		padding: 0 0 0 12px;
+		
 		&:not(:last-child){
 			margin-right: 26px;
+		}
+		
+		&:focus {
+			border: 2px solid @border-color;
+			outline: none;
 		}
 		
 	}
@@ -1350,6 +1371,11 @@
 				opacity: 1;
 			}
 		}
+	}
+	.min-max {
+		position: absolute;
+		right: 145px;
+		top: 15px;
 	}
 }
 

@@ -1134,16 +1134,32 @@ a:focus {
   height: 57px;
   border: 1px solid #80a2c3;
   margin-right: 28px;
+  padding: 0 12px 0 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none!important;
+  background: url(../img/icons/select-arrow.png) no-repeat right center;
+}
+.search-box__form select:focus {
+  border: 2px solid #265475;
+  outline: none;
+}
+.search-box__form option {
   padding: 0 0 0 12px;
 }
-.search-box__form input[type="number"] {
+.search-box__form input[type="text"] {
   border: 1px solid #80a2c3;
   height: 57px;
   width: 135px;
   padding: 0 0 0 12px;
 }
-.search-box__form input[type="number"]:not(:last-child) {
+.search-box__form input[type="text"]:not(:last-child) {
   margin-right: 26px;
+}
+.search-box__form input[type="text"]:focus {
+  border: 2px solid #265475;
+  outline: none;
 }
 .search-box__form .area {
   width: 190px !important;
@@ -1180,6 +1196,11 @@ a:focus {
 }
 .search-box__form .go-form_loop:hover:before {
   opacity: 1;
+}
+.search-box__form .min-max {
+  position: absolute;
+  right: 145px;
+  top: 15px;
 }
 .heads__h2 {
   margin-top: 34px;
