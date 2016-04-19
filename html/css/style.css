@@ -1230,6 +1230,45 @@ a:focus {
 .news-box .new {
   width: 262px;
 }
+.news-slide {
+  margin-bottom: 40px;
+}
+.news-slide__img {
+  width: 100%;
+  height: auto;
+}
+.news-slide .slick-dots {
+  margin-top: 34px;
+}
+.news-slide .slick-dots li {
+  font-size: 0;
+  line-height: 0;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+  cursor: pointer;
+  color: transparent;
+  outline: none;
+  background: transparent;
+  border: 2px solid #014687;
+}
+.news-slide .slick-dots li.slick-active {
+  background: #014687;
+}
+.news-slide .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
 .heads__h2 {
   margin-top: 34px;
   margin-bottom: 34px;
@@ -1241,6 +1280,22 @@ a:focus {
   height: 35px;
   font-size: 50px;
   text-transform: uppercase;
+}
+.heads-news {
+  margin-top: 34px;
+  margin-bottom: 34px;
+  border-left: 6px solid #a4ce4d;
+}
+.heads-news__time {
+  font-size: 16px;
+  color: #949494;
+  padding-left: 9px;
+}
+.heads-news__h2 {
+  font-family: "nerisblack", sans-serif;
+  font-size: 30px;
+  color: #0f4d78;
+  padding-left: 9px;
 }
 .links__list {
   list-style: none;

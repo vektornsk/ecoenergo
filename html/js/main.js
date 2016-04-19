@@ -69,17 +69,40 @@ $(function() {
 			.offsetParent().offsetParent().find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
 	});
 	
+	
+//=== slide-news ===
+	
+	if ($('.news-slide').length){
+		
+		$('.news-slide').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			dots: true,
+			infinite: true,
+			speed: 300,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			arrows: false
+		});
+		
+	}
+	
 //=== map ===
 	
-	ymaps.ready(function(){
-		var myMap = new ymaps.Map("mapM", {
-			center:[55.76, 37.64], // Москва
-			zoom:10
+	if ($('.map').length){
+	
+		ymaps.ready(function(){
+			var myMap = new ymaps.Map("mapM", {
+				center:[55.76, 37.64], // Москва
+				zoom:10
+			});
+			var myMap2 = new ymaps.Map("mapN", {
+				center:[55.03, 82.92], // Новосибирск
+				zoom:10
+			});
 		});
-		var myMap2 = new ymaps.Map("mapN", {
-			center:[55.03, 82.92], // Новосибирск
-			zoom:10
-		});
-	});
+	
+	}
+	
 
 }); //$

@@ -1412,7 +1412,55 @@
 	}
 }
 
+//======================================== Новости выбранные ===================================================>
 
+
+//=== Slide news ===
+
+.news-slide {
+	margin-bottom: 40px;
+	&__img {
+		width: 100%;
+		height: auto;
+	}
+
+	.slick-dots {
+		margin-top: 34px;
+	}
+
+	.slick-dots li {
+		font-size: 0;
+		line-height: 0;
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+		margin-right: 15px;
+		cursor: pointer;
+		color: transparent;
+		outline: none;
+		background: transparent;
+		border: 2px solid #014687;
+		
+		&.slick-active {
+			background: #014687;
+		}
+	}	
+
+	.slick-dots li button {
+		font-size: 0;
+		line-height: 0;
+		display: block;
+		width: 20px;
+		height: 20px;
+		padding: 5px;
+		cursor: pointer;
+		color: transparent;
+		border: 0;
+		outline: none;
+		background: transparent;
+	}
+
+}
 //======================================== Heads Заголовок ===================================================>
 
 .heads {
@@ -1429,6 +1477,25 @@
 		font-size: 50px;
 		text-transform: uppercase;
 		
+	}
+}
+
+.heads-news {
+	margin-top: 34px;
+	margin-bottom: 34px;
+	border-left: 6px solid @color-green;
+	
+	&__time {
+		font-size: 16px;
+		color: #949494;
+		padding-left: 9px;
+	}
+	
+	&__h2 {
+		font-family: @font-neris;
+		font-size: 30px;
+		color: @color-blue-head;
+		padding-left: 9px;
 	}
 }
 
