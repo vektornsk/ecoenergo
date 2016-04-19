@@ -893,6 +893,20 @@
 			
 		}
 	}
+	&__news-plus {
+
+		&:before {
+			content: " ";
+			display: inline-block;
+			background: url(../img/icons/news-plus.png);
+			width: 19px;
+			height: 19px;
+			position: relative;
+			top: 2px;
+			left: -13px;
+
+		}
+	}
 }
 
 //=== Проекты главная ===
@@ -1380,6 +1394,25 @@
 }
 
 
+//======================================== Новости ===================================================>
+.news-wrap {
+	.row {
+		margin-bottom: 69px;
+	}
+}
+
+.news-box {
+	font-size: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+	.new {
+		width: 262px;
+	}
+}
+
+
 //======================================== Heads Заголовок ===================================================>
 
 .heads {
@@ -1436,6 +1469,10 @@
 			&:after {
 				background-position: -16px 0;
 			}
+			
+			&:before {
+				background-position: -12px 0;
+			}
 		}
 		
 		&:after {
@@ -1447,6 +1484,24 @@
 			position: relative;
 			top: 8px;
 			margin-right: 10px;
+		}
+		
+		&_next {
+			margin-left: -18px;
+			&:before {
+				content: " ";
+				display: inline-block;
+				background: url(../img/icons/arrow-links-next.png);
+				width: 12px;
+				height: 26px;
+				position: relative;
+				top: 8px;
+				left: 2px;
+			}
+			
+			span {
+				padding-left: 10px;
+			}
 		}
 	}
 	
