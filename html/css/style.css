@@ -529,13 +529,14 @@ a:focus {
   padding-top: 50px;
 }
 .address {
-  padding-top: 85px;
+  padding-top: 80px;
   font-size: 18px;
   color: #ffffff;
   background: url('../img/logo2.png') no-repeat top left;
 }
 .address__item {
   list-style: none;
+  height: 42px;
 }
 .address__item:not(:last-child) {
   margin-bottom: 31px;
@@ -932,17 +933,24 @@ a:focus {
   display: flex;
 }
 .contacts__left {
-  margin-top: 130px;
   margin-right: 37px;
 }
 .contacts .address__item {
   font-size: 18px;
   color: #0f4d78;
   margin-bottom: 15px;
-  height: 42px;
+  height: auto;
+  line-height: normal;
+}
+.contacts .address__item_sp {
+  display: block;
+  margin-left: 45px;
 }
 .contacts .address__item span {
   color: #0f4d78;
+}
+.contacts .address__item.loc:before {
+  top: 25px;
 }
 .map {
   margin-bottom: 45px;

@@ -561,8 +561,10 @@
 	padding-top: 50px;
 }
 
+//=========================================== Адресс =======================>
+
 .address {
-	padding-top: 85px;
+	padding-top: 80px;
 	font-size: 18px;
 	color: #ffffff;
 	background: url('../img/logo2.png') no-repeat top left;
@@ -572,6 +574,7 @@
 	}
 	&__item {
 		list-style: none;
+		height: 42px;
 		
 		&:not(:last-child) {
 			margin-bottom: 31px;
@@ -1051,7 +1054,7 @@
 	
 	
 	&__left {
-		margin-top: 130px;
+		//margin-top: 130px;
 		margin-right: 37px;
 	}
 	
@@ -1063,11 +1066,21 @@
 		font-size: 18px;
 		color: @color-blue-head;
 		margin-bottom: 15px;
-		height: 42px;
+		height: auto;
+		line-height: normal;
+		
+		&_sp {
+			display: block;
+			margin-left: 45px;
+		}
 		
 		span {
 			color: @color-blue-head;
 		}
+	}
+	
+	.address__item.loc:before {
+		top: 25px;
 	}
 }
 
