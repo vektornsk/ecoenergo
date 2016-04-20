@@ -1212,6 +1212,35 @@ a:focus {
   right: 145px;
   top: 15px;
 }
+.about-wrap .article {
+  margin-bottom: 60px;
+}
+.about-wrap .article .call__item {
+  border: none;
+  background: url(../img/bg.jpg) no-repeat;
+  padding-top: 90px;
+  margin-bottom: 25px;
+}
+.about-wrap .article .call__item:hover {
+  box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.41);
+}
+.about-wrap .article .call__name {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "nerisblack", sans-serif;
+  text-transform: uppercase;
+}
+.about-wrap .article .call__name:after {
+  content: " ";
+  display: block;
+  width: 132px;
+  height: 8px;
+  background-color: #a4ce4d;
+  margin: 10px auto 0;
+}
+.about__img {
+  margin-bottom: 40px;
+}
 .news-wrap .row {
   margin-bottom: 69px;
 }
