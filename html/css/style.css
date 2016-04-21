@@ -1144,6 +1144,130 @@ a:focus {
   left: 126px;
   top: 26px;
 }
+.catalog-s-box {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.catalog-s-box .product {
+  width: 360px;
+  height: 364px;
+  background-color: #fff;
+}
+.catalog-s-box .product:not(:nth-child(3n)) {
+  margin-right: 29px;
+}
+.catalog-s-box .product__img {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.catalog-s-box .product__text {
+  width: 100%;
+  padding-right: 20px;
+  background-color: #0f4e7a;
+  position: absolute;
+  bottom: 0;
+}
+.product-search {
+  text-align: center;
+  background-color: transparent !important;
+  position: relative;
+}
+.product-search__head {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #0f4d78;
+  font-family: "PTSansBold", sans-serif;
+}
+.product-search .search-box__form {
+  text-align: left;
+  padding: 0;
+  margin-top: 61px;
+}
+.product-search .search-box__form label {
+  top: 55px;
+}
+.product-search .search-box__form select {
+  width: 208px !important;
+  margin-right: 11px;
+  margin-bottom: 46px;
+}
+.product-search .search-box__form input {
+  background: transparent;
+}
+.product-search .search-box__form .power {
+  margin-right: 0 !important;
+}
+.product-search .search-box__form .price-label {
+  top: 158px;
+  left: 0;
+}
+.product-search .search-box__form .price-inp {
+  width: 155px;
+  margin-right: 42px !important;
+}
+.product-search .search-box__form .price-inp2 {
+  width: 155px;
+  margin-right: 0 !important;
+}
+.product-search .search-box__form .min-max {
+  right: 175px;
+  top: 215px;
+}
+.product-search .search-box__form .go-form {
+  width: 100%;
+  height: 65px;
+  line-height: 65px;
+}
+.product-search .search-box__form .go-form_loop {
+  margin-top: 46px;
+  background: #f85e08;
+  width: 100%;
+  height: 65px;
+  line-height: 65px;
+}
+.product-search .search-box__form .go-form_loop:before {
+  left: 115px;
+}
+.product-search:hover {
+  box-shadow: none;
+}
+.filter {
+  margin-bottom: 46px;
+}
+.filter__list {
+  font-size: 0;
+}
+.filter__item {
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 2px;
+}
+.filter__link {
+  color: #0f4d78;
+  padding: 0 10px;
+  line-height: 28px;
+}
+.filter__link:hover {
+  color: #ffffff;
+  background-color: #0f4d78;
+  border-radius: 2px;
+  height: 28px;
+  text-decoration: none;
+}
+.filter__link.active {
+  color: #ffffff;
+  background-color: #0f4d78;
+  border-radius: 2px;
+  height: 28px;
+}
 .search-box {
   background-color: #ffffff;
   margin-bottom: 47px;
