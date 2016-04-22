@@ -767,6 +767,10 @@
 	padding-top: 26px;
 	padding-left: 26px;
 	padding-bottom: 26px;
+	
+	&_orange {
+		border-left: 8px solid @color-orange;
+	}
 }
 
 //=== Продукт главная ===
@@ -1068,6 +1072,174 @@
 	}
 
 }
+
+//======================================== Бренды выбранное ===================================================>
+
+.brands-select-wrap {}
+
+//=== Бренды инфо ===
+.brand-info {
+	margin-bottom: 43px;
+	
+	&__img {
+		background-color: #fff;
+		position: relative;
+		width: 360px;
+		height: 196px;
+		
+		img {
+			position: absolute;
+			margin: auto;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+		
+	}
+	&__text {
+		font-size: 18px;
+		line-height: 27px;
+	}
+
+}
+
+
+.brand-s-box {
+
+	display: flex;
+	flex-wrap: wrap;
+
+	.product {
+		width: 360px;
+		height: 257px;
+		background-color: #fff;
+		
+		&:not(:nth-child(3n)){
+			margin-right: 29px;
+		}
+		
+		&__img {
+			position: absolute;
+			margin: auto;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+		}
+		
+		&__text {
+			width: 100%;
+			padding-right: 20px;
+			position: absolute;
+			bottom: 0;
+		}
+		
+		.search-box__form {
+			margin-top: 25px;
+			
+			.brand-label, .power-label {
+				top: -15px ;
+			}
+			.brand-select {
+				margin-bottom: 35px;
+			}
+			
+			.price-label {
+				top: 78px;
+			}
+			.min-max{
+				top: 134px;
+			}
+			.go-form_loop {
+				margin-top: 35px;
+				height: 48px;
+				line-height: 48px;
+			}
+			.go-form{
+				height: 48px;
+				line-height: 48px;
+			}
+		}
+	}
+
+}
+
+
+//============================= Фильтр для брендов ===========
+
+.filter-brand {
+	border-bottom: 2px solid @color-green;
+	margin-bottom: 30px;
+	
+	&__list {}
+	
+	&__item {
+		display: inline-block;
+		&:not(:last-child){
+			margin-right: 12px;
+		}
+	}
+	
+	&__link {
+		display: block;
+		height: 43px;
+		line-height: 45px;
+		text-transform: uppercase;
+		font-family: @font-bold;
+		font-size: 20px;
+		padding: 0 16px;
+		color: @color-blue-head;
+		
+		&:hover {
+			text-decoration: none;
+			background: @color-green;
+			color: #fff;
+		}
+		
+		&.active {
+			background: @color-green;
+			color: #fff;
+		}
+	}
+}
+
+//========================================= Партнерам =================================================>
+
+.partners {
+	
+	&__item {
+		margin-bottom: 90px;
+	}
+	
+	&__text {
+		font-size: 18px;
+		line-height: 27px;
+	}
+}
+
+.partners-form {
+	.form__input {
+		background: transparent;
+		color: #2e2e2e;
+		
+		&::-webkit-input-placeholder {color:#0f4d78;}
+		&::-moz-placeholder          {color:#0f4d78;}
+		&:-moz-placeholder           {color:#0f4d78;}
+		&:-ms-input-placeholder      {color:#0f4d78;}
+	}
+	.form__text {
+		background: transparent;
+		height: 273px;
+		color: #2e2e2e;
+		
+		&::-webkit-input-placeholder {color:#0f4d78;}
+		&::-moz-placeholder          {color:#0f4d78;}
+		&:-moz-placeholder           {color:#0f4d78;}
+		&:-ms-input-placeholder      {color:#0f4d78;}
+	}
+}
+
 
 //======================================== Контакты ===================================================>
 
@@ -1514,16 +1686,16 @@
 		padding: 0;
 		margin-top: 61px;
 		
-		label {
+		.brand-label, .power-label {
 			top: 55px;
 		}
 		
-		select {
+		.brand-select {
 			width: 208px !important;
 			margin-right: 11px;
 			margin-bottom: 46px;
 		}
-		input {
+		.power, .price-inp, .price-inp2 {
 			background: transparent;
 		}
 		
@@ -1538,7 +1710,7 @@
 		}
 		.price-inp {
 			width: 155px;
-			margin-right: 42px !important;
+			margin-right: 44px !important;
 		}
 		
 		.price-inp2 {
@@ -1600,6 +1772,7 @@
 		color: @color-blue-head;
 		padding: 0 10px;
 		line-height: 28px;
+		display: block;
 		
 		&:hover {
 			color: #ffffff;
@@ -1676,14 +1849,14 @@
 		position: relative;
 	}
 	
-	label {
+	.tip-label, .pomeshen-label, .price-label, .brand-label, .power-label, .plosh-label {
 		position: absolute;
 		top: -35px;
 		font-size: 16px;
 		line-height: 43px;
 		color: #2e2e2e;
 	}
-	select {
+	.tip-select, .pomeshen-select, .brand-select {
 		width: 353px;
 		height: 57px;
 		border: 1px solid #80a2c3;
@@ -1706,7 +1879,7 @@
 		
 	}
 
-	input[type="text"] {
+	.price-inp, .price-inp2, .power, .area {
 		border: 1px solid #80a2c3;
 		height: 57px;
 		width: 135px;
@@ -2009,6 +2182,29 @@
 		font-size: 30px;
 		color: @color-blue-head;
 		padding-left: 9px;
+	}
+}
+
+.heads-brand {
+	margin-top: 34px;
+	margin-bottom: 34px;
+	border-left: 6px solid @color-green;
+
+	&__name {
+		font-size: 30px;
+		color: @color-blue-head;
+		font-family: @font-neris;
+		padding-left: 9px;
+		line-height: 30px;
+	}
+
+	&__h2 {
+		font-family: @font-neris;
+		font-size: 50px;
+		line-height: 50px;
+		color: @color-blue-head;
+		padding-left: 9px;
+		text-transform: uppercase;
 	}
 }
 
