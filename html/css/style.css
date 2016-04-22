@@ -1175,6 +1175,113 @@ a:focus {
   position: absolute;
   bottom: 0;
 }
+.pagination-box {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 78px;
+}
+.pagination__item {
+  display: inline-block;
+  width: 48px;
+  height: 50px;
+  text-align: center;
+  color: #0f4d78;
+}
+.pagination__item_prev {
+  margin-right: 12px;
+}
+.pagination__item_next {
+  margin-left: 12px;
+}
+.pagination__link {
+  width: 48px;
+  height: 50px;
+  display: block;
+  font-size: 24px;
+  line-height: 50px;
+  color: #0f4d78;
+  font-family: "PTSansBold", sans-serif;
+}
+.pagination__link_prev {
+  background: url(../img/icons/pagin-arrow.png) no-repeat;
+  font-size: 0 !important;
+  line-height: 67px !important;
+}
+.pagination__link_prev:hover {
+  background-position: -48px 0;
+}
+.pagination__link_next {
+  background: url(../img/icons/pagin-arrow.png) no-repeat;
+  font-size: 0 !important;
+  line-height: 67px !important;
+  background-position: -96px 0;
+}
+.pagination__link_next:hover {
+  background-position: -144px 0;
+}
+.pagination__link:hover {
+  text-decoration: none;
+  background-color: #a4ce4d;
+  color: #fff;
+}
+.pagination__link.active {
+  background-color: #a4ce4d;
+  color: #fff;
+}
+.solution-box .call__item {
+  width: 361px;
+  margin-top: 0;
+}
+.solution-box .call__item:first-child {
+  margin-bottom: 35px;
+}
+.solution {
+  padding: 38px 38px 40px 48px;
+  background: #ffffff;
+  margin-bottom: 88px;
+}
+.solution__head {
+  font-size: 30px;
+  font-family: "nerisblack", sans-serif;
+  color: #0f4d78;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.solution__text {
+  font-size: 18px;
+  line-height: 27px;
+}
+.delivery-box {
+  margin-bottom: 102px;
+}
+.delivery__item {
+  list-style: none;
+  margin-top: 30px;
+}
+.delivery__item i {
+  display: inline-block;
+  width: 79px;
+  height: 79px;
+  position: relative;
+}
+.delivery__item span {
+  display: inline-block;
+  margin-left: 106px;
+  margin-top: -87px;
+  vertical-align: top;
+  font-size: 18px;
+  line-height: 27px;
+}
+.delivery__item_car {
+  background: url("../img/icons/delivery-car.png") no-repeat;
+}
+.delivery__item_key {
+  background: url("../img/icons/delivery-key.png") no-repeat;
+}
 .product-search {
   text-align: center;
   background-color: transparent !important;

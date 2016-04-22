@@ -1355,6 +1355,144 @@
 	
 }
 
+//==================================== Пагинация навигация ======================================>
+
+.pagination-box {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 78px;
+}
+
+.pagination {
+	
+	&__item {
+		display: inline-block;
+		width: 48px;
+		height: 50px;
+		text-align: center;
+		color: @color-blue-head;
+		
+		&_prev {
+			margin-right: 12px;
+		}
+		
+		&_next {
+			margin-left: 12px;
+		}
+	}
+	
+	&__link {
+		width: 48px;
+		height: 50px;
+		display: block;
+		font-size: 24px;
+		line-height: 50px;
+		color: @color-blue-head;
+		font-family: @font-bold;
+		
+		&_prev {
+			background: url(../img/icons/pagin-arrow.png) no-repeat;
+			font-size: 0 !important;
+			line-height: 67px !important;
+			
+			&:hover {
+				background-position: -48px 0;
+			}
+		}
+		&_next {
+			background: url(../img/icons/pagin-arrow.png) no-repeat;
+			font-size: 0 !important;
+			line-height: 67px !important;
+			background-position: -96px 0;
+			
+			&:hover {
+				background-position: -144px 0;
+			}
+
+		}
+		
+		&:hover {
+			text-decoration: none;
+			background-color: @color-green;
+			color: #fff;
+		}
+		
+		&.active {
+			background-color: @color-green;
+			color: #fff;
+		}
+	}
+}
+
+//=================================== Популярные решения ======================================>
+
+.solution-box {
+	
+	.call__item {
+		width: 361px;
+		margin-top: 0;
+		&:first-child {
+			margin-bottom: 35px;
+		}
+	}
+}
+
+.solution {
+	padding: 38px 38px 40px 48px;
+	background: #ffffff;
+	margin-bottom: 88px;
+	
+	&__head {
+		font-size: 30px;
+		font-family: @font-neris;
+		color: @color-blue-head;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+	
+	&__text {
+		font-size: 18px;
+		line-height: 27px;
+	}
+}
+
+//=================================== Доставка и монтаж ======================================>
+
+.delivery-box {
+	margin-bottom: 102px;
+}
+
+.delivery {
+	
+	&__item {
+		list-style: none;
+		margin-top: 30px;
+		
+		i {
+			display: inline-block;
+			width: 79px;
+			height: 79px;
+			position: relative;
+		}
+		
+		span {
+			display: inline-block;
+			margin-left: 106px;
+			margin-top: -87px;
+			vertical-align: top;
+			font-size: 18px;
+			line-height: 27px;
+		}
+		
+		&_car {
+			background: url("../img/icons/delivery-car.png") no-repeat;
+		}
+		
+		&_key {
+			background: url("../img/icons/delivery-key.png") no-repeat;
+		}
+	}
+}
 
 //=============== Поиск по категории ===================>
 
@@ -1440,6 +1578,7 @@
 	}
 	
 }
+
 
 
 //======================================== Фильтр товара ===================================================>
