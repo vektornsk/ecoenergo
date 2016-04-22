@@ -216,7 +216,7 @@ a:focus {
   background-color: #f85e08;
 }
 .menu__item:not(:last-child) {
-  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid #093656;
 }
 .menu__item_catalog {
   background-color: #a4ce4d !important;
@@ -1701,6 +1701,19 @@ a:focus {
 }
 .about__img {
   margin-bottom: 40px;
+}
+.projects-wrap .more {
+  margin-top: 17px;
+  margin-bottom: 79px;
+}
+.projects-box .release__bg {
+  width: 100%;
+}
+.projects-box .release__bg_center {
+  margin-left: 0;
+}
+.projects-box .release__text {
+  width: 68%;
 }
 .news-wrap .row {
   margin-bottom: 69px;
