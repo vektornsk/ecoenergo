@@ -1959,6 +1959,114 @@ a:focus {
 .tabs-product__content .arrow-slide {
   margin-top: 20px;
 }
+.support-box__text {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+.support-box__text p:not(:last-child) {
+  padding-bottom: 25px;
+}
+.support-box__text a:focus {
+  color: #0f4d78;
+}
+.support-box .tabs-product__content {
+  margin-bottom: 0px;
+}
+.support-box .pagination-box {
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+.support-box .news-box {
+  margin-top: 40px;
+}
+.support-list__one {
+  width: 35% !important;
+}
+.support-list__two {
+  width: 25% !important;
+}
+.support-list__tree {
+  width: 20% !important;
+}
+.support-list__four {
+  width: 10% !important;
+}
+.support-list__link {
+  font-family: "PTSansBold", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #2e2e2e;
+}
+.support-list__link:hover {
+  text-decoration: none;
+  color: #2e2e2e;
+}
+.support-list__link:hover .support-list__save {
+  background-position: -17px 0;
+}
+.support-list__save {
+  display: inline-block;
+  width: 17px;
+  height: 14px;
+  background: url("../img/icons/save.png") no-repeat;
+  margin-right: 10px;
+}
+.support-filter {
+  background-color: #fff;
+  font-size: 18px;
+  height: 85px;
+  padding-top: 30px;
+}
+.support-filter__left {
+  display: inline-block;
+  padding-left: 20px;
+}
+.support-filter__right {
+  display: inline-block;
+  float: right;
+  padding-right: 20px;
+}
+.support-filter label {
+  margin-right: 10px;
+}
+.support-filter select {
+  border: 1px solid #80a2c3;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none!important;
+  background: url(../img/icons/select-arrow.png) no-repeat right center;
+  width: 50px;
+  padding: 0 5px;
+}
+.support-filter select:focus {
+  outline: none;
+}
+.support-filter .radio {
+  width: 110px;
+  position: absolute;
+  z-index: 2;
+}
+.support-filter .radio:before {
+  content: " ";
+  display: inline-block;
+  width: 110px;
+  height: 40px;
+}
+.filter-support {
+  font-size: 0;
+  float: left;
+}
+.filter-support__item {
+  position: absolute;
+  font-size: 18px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  width: 110px;
+  height: 40px;
+  border: 1px solid #0f4d78;
+}
 .news-wrap .row {
   margin-bottom: 69px;
 }

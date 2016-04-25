@@ -2321,6 +2321,151 @@
 }
 
 
+//========================================= Техподдержка =============================================>
+
+.support-box {
+	
+	&__text {
+		font-size: 18px;
+		margin-bottom: 50px;
+		
+		p {
+			&:not(:last-child){
+				padding-bottom: 25px;
+			}
+		}
+		
+		a {
+			&:focus {
+				color: @color-blue-head;
+			}
+		}
+	}
+	
+	.tabs-product__content {
+		margin-bottom: 0px;
+	}
+	
+	.pagination-box {
+		margin-top: 40px;
+		margin-bottom: 25px;
+	}
+	
+	.news-box {
+		margin-top: 40px;
+	}
+}
+
+.support-list {
+	
+	&__one {
+		width: 35% !important;
+	}
+	&__two {
+		width: 25% !important;
+	}
+	&__tree {
+		width: 20% !important;
+	}
+	&__four {
+		width: 10% !important;
+	}
+	
+	&__link {
+		font-family: @font-bold;
+		text-transform: uppercase;
+		font-size: 16px;
+		color: #2e2e2e;
+		
+		&:hover {
+			text-decoration: none;
+			color: #2e2e2e;
+			
+			.support-list__save {
+				background-position: -17px 0;
+			}
+		}
+	}
+	
+	&__save {
+		display: inline-block;
+		width: 17px;
+		height: 14px;
+		background: url("../img/icons/save.png") no-repeat;
+		margin-right: 10px;
+	}
+}
+
+
+
+.support-filter {
+	background-color: #fff;
+	font-size: 18px;
+	height: 85px;
+	padding-top: 30px;
+	
+	
+	&__left {
+		display: inline-block;
+		padding-left: 20px;
+	}
+	
+	&__right {
+		display: inline-block;
+		float: right;
+		padding-right: 20px;
+	}
+	
+	label {
+		margin-right: 10px;
+	}
+	
+	select {
+		border: 1px solid #80a2c3;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		appearance: none!important;
+		background: url(../img/icons/select-arrow.png) no-repeat right center;
+		width: 50px;
+		padding: 0 5px;
+		
+		&:focus {
+			outline: none;
+		}
+	}
+	
+	.radio {
+		width: 110px;
+		//height: 40px;
+		position: absolute;
+		z-index: 2;
+		
+		&:before {
+			content: " ";
+			display: inline-block;
+			width: 110px;
+			height: 40px;
+			
+		}
+	}
+}
+
+.filter-support {
+	font-size: 0;
+	float: left;
+	&__item {
+		//top: 0;
+		position: absolute;
+		font-size: 18px;
+		line-height: 40px;
+		display: inline-block;
+		text-align: center;
+		width: 110px;
+		height: 40px;
+		border: 1px solid @color-blue-head;
+	}
+}
 
 //======================================== Новости ===================================================>
 .news-wrap {
