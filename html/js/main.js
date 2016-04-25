@@ -70,6 +70,15 @@ $(function() {
 	});
 	
 	
+//=== tabs-product-card ===	
+	
+	$('ul.tabs-product__list').on('click', 'li:not(.active)', function() {
+		console.log($(this));
+		$(this)
+			.addClass('active').siblings().removeClass('active')
+			.offsetParent().offsetParent().find('div.tabs-product__content').removeClass('active').eq($(this).index()).addClass('active');
+	});
+	
 //=== slide-news ===
 	
 	if ($('.news-slide').length){
@@ -104,6 +113,16 @@ $(function() {
 		
 	}
 	
+//=== do 9Ikop9I ====
+	$('.js-link').bind("click", function(e){
+		e.preventDefault();
+		
+		var anchor = $(this);
+		$('html, body').stop().animate({
+			scrollTop: $(anchor.attr('href')).offset().top - 170
+		}, 1000);
+		
+	});
 	
 	
 //=== map ===
