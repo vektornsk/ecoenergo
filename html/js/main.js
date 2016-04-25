@@ -87,6 +87,25 @@ $(function() {
 		
 	}
 	
+//=== slide-wrap ===
+	
+	if($('.slide-wrap').length){
+		
+		$('.slide').slick({
+			slidesToShow: 3,
+			infinite: true,
+			speed: 300,
+			arrows: true,
+			prevArrow: $('.prev-slide'),
+			nextArrow: $('.next-slide'),
+			
+		});
+		
+		
+	}
+	
+	
+	
 //=== map ===
 	
 	if ($('.map').length){

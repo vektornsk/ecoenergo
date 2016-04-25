@@ -1408,27 +1408,12 @@ a:focus {
 }
 .delivery__item {
   list-style: none;
-  margin-top: 30px;
-}
-.delivery__item i {
-  display: inline-block;
-  width: 79px;
-  height: 79px;
-  position: relative;
 }
 .delivery__item span {
   display: inline-block;
-  margin-left: 106px;
-  margin-top: -87px;
   vertical-align: top;
   font-size: 18px;
   line-height: 27px;
-}
-.delivery__item_car {
-  background: url("../img/icons/delivery-car.png") no-repeat;
-}
-.delivery__item_key {
-  background: url("../img/icons/delivery-key.png") no-repeat;
 }
 .product-search {
   text-align: center;
@@ -1714,6 +1699,108 @@ a:focus {
 }
 .projects-box .release__text {
   width: 68%;
+}
+.projects-select-wrap .heads__h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: none;
+  font-family: "nerisblack", sans-serif;
+}
+.projects-s-box__item {
+  margin-bottom: 90px;
+}
+.projects-s-box__text {
+  font-size: 18px;
+  line-height: 27px;
+}
+.material {
+  margin-top: 20px;
+}
+.material__name {
+  font-family: "PTSansBold", sans-serif;
+  color: #0f4d78;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.material__item {
+  font-size: 18px;
+  line-height: 36px;
+  list-style-image: url("../img/icons/li.png");
+  color: #0f4d78;
+}
+.level {
+  width: 360px;
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+.level__head {
+  font-family: "nerisblack", sans-serif;
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: #0f4d78;
+}
+.level.product {
+  box-shadow: none;
+}
+.level.product:hover .product__text {
+  background-color: rgba(15, 78, 122, 0.95);
+}
+.level .product__text {
+  height: 115px;
+  margin-top: -115px;
+  padding-top: 20px;
+}
+.level .product__name {
+  font-family: "PTSansRegular", sans-serif;
+  font-size: 18px;
+}
+.slick-slide:focus {
+  outline: none;
+}
+.arrow-slide {
+  position: relative;
+  float: right;
+  overflow: hidden;
+  zoom: 1;
+}
+.arrow-slide:before,
+.arrow-slide:after {
+  content: "";
+  display: table;
+}
+.arrow-slide:after {
+  clear: both;
+}
+.arrow-slide li {
+  float: left;
+  position: relative;
+  margin-bottom: 20px;
+}
+.arrow-slide li.prev-slide {
+  display: block;
+  height: 49px;
+  width: 48px;
+  list-style: none;
+  background: url('../img/icons/slide-arrow.png') no-repeat;
+  cursor: pointer;
+}
+.arrow-slide li.prev-slide:hover {
+  background-position: -48px 0;
+}
+.arrow-slide li.next-slide {
+  display: block;
+  height: 49px;
+  width: 48px;
+  list-style: none;
+  background: url('../img/icons/slide-arrow.png') no-repeat;
+  background-position: -97px 0;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.arrow-slide li.next-slide:hover {
+  background-position: -146px 0;
 }
 .news-wrap .row {
   margin-bottom: 69px;

@@ -1638,30 +1638,12 @@
 	
 	&__item {
 		list-style: none;
-		margin-top: 30px;
-		
-		i {
-			display: inline-block;
-			width: 79px;
-			height: 79px;
-			position: relative;
-		}
 		
 		span {
 			display: inline-block;
-			margin-left: 106px;
-			margin-top: -87px;
 			vertical-align: top;
 			font-size: 18px;
 			line-height: 27px;
-		}
-		
-		&_car {
-			background: url("../img/icons/delivery-car.png") no-repeat;
-		}
-		
-		&_key {
-			background: url("../img/icons/delivery-key.png") no-repeat;
 		}
 	}
 }
@@ -2008,6 +1990,141 @@
 	}
 	
 }
+
+//=========================================== Проекты выбранное ==============================================> 
+.projects-select-wrap {
+	.heads__h2 {
+		font-size: 30px;
+		line-height: 30px;
+		text-transform: none;
+		font-family: @font-neris;
+	}
+}
+
+.projects-s-box {
+
+	&__item {
+		margin-bottom: 90px;
+	}
+
+	&__text {
+		font-size: 18px;
+		line-height: 27px;
+	}
+}
+
+
+//================= Материал =================
+
+.material {
+	margin-top: 20px;
+	
+	&__name {
+		font-family: @font-bold;
+		color: @color-blue-head;
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+	
+	&__item {
+		font-size: 18px;
+		line-height: 36px;
+		list-style-image: url("../img/icons/li.png");
+		color: @color-blue-head;
+	}
+}
+
+
+//================================================ Этап строительства ===============================>
+
+
+
+
+.level {
+	width: 360px;
+	overflow: hidden;
+	margin-bottom: 80px;
+	
+	&__head {
+		font-family: @font-neris;
+		font-size: 30px;
+		line-height: 35px;
+		text-transform: uppercase;
+		color: @color-blue-head;
+	}
+	
+	&.product{
+		box-shadow: none;
+		
+		&:hover {
+			.product__text {
+				background-color: rgba(15, 78, 122, 0.95);
+			}
+		}
+	}
+	
+	.product__text {
+		height: 115px;
+		margin-top: -115px;
+		padding-top: 20px;
+	}
+	.product__name {
+		font-family: @font-reg;
+		font-size: 18px;
+	}
+}
+
+.slick-slide {
+	&:focus {
+		outline: none;
+	}
+}
+
+
+//======= слайд стрелки ======
+
+.arrow-slide {
+	position: relative;
+	float: right;
+	overflow: hidden;
+	.cf;
+	li {
+		float: left;
+		position: relative;
+		margin-bottom: 20px;
+		
+		&.prev-slide{
+			display: block;
+			height: 49px;
+			width: 48px;
+			list-style: none;
+			background: url('../img/icons/slide-arrow.png') no-repeat;
+			cursor: pointer;
+			
+			&:hover {
+				background-position: -48px 0;
+			}
+		}
+		
+		&.next-slide{
+			display: block;
+			height: 49px;
+			width: 48px;
+			list-style: none;
+			background: url('../img/icons/slide-arrow.png') no-repeat;
+			background-position: -97px 0;
+			cursor: pointer;
+			margin-right: 20px;
+			margin-left: 20px;
+			
+			&:hover {
+				background-position: -146px 0;
+			}
+		}
+	}
+}
+
+
 
 //======================================== Новости ===================================================>
 .news-wrap {
