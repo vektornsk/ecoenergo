@@ -88,6 +88,7 @@ a:focus {
   margin-top: -836px;
 }
 .header {
+  background: #11456a;
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #11456a), color-stop(100%, #0f4d7a));
   background: linear-gradient(to bottom, #11456a 0%, #0f4d7a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#11456a', endColorstr='#0f4d7a', GradientType=0);
@@ -125,7 +126,7 @@ a:focus {
   background-color: #11456a;
   padding-left: 12px;
   padding-right: 50px;
-  line-height: 55px;
+  height: 55px;
   width: 359px;
   color: #8298a7;
 }
@@ -424,8 +425,12 @@ a:focus {
   display: block;
 }
 .menu-company__img {
-  -webkit-filter: grayscale();
-          filter: grayscale();
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  /* Firefox 3.5+ */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+ & Safari 6+ */
   margin-bottom: 8px;
   opacity: .7;
 }
@@ -496,12 +501,16 @@ a:focus {
   background: url(../img/footer-meu.png) no-repeat center center;
 }
 .footer-nav {
-  display: -webkit-flex;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex;
   -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-top: 68px;
   padding-bottom: 56px;
 }
@@ -586,8 +595,12 @@ a:focus {
   line-height: 50px;
 }
 .form {
-  display: -webkit-flex;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex;
 }
 .form__input {
@@ -723,6 +736,10 @@ a:focus {
   position: absolute;
   z-index: 2;
 }
+.product__img {
+  max-width: 360px;
+  max-height: 257px;
+}
 .product__text {
   background-color: rgba(15, 78, 122, 0.95);
   height: 65px;
@@ -754,6 +771,10 @@ a:focus {
 }
 .new__link:hover {
   box-shadow: inset 0px -5px 0px 0px #a4ce4d;
+}
+.new__img {
+  max-width: 262px;
+  max-height: 179px;
 }
 .new__text {
   padding: 12px 20px 25px;
@@ -898,12 +919,16 @@ a:focus {
 }
 .brand-box {
   font-size: 0;
-  display: -webkit-flex;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex;
   -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .brand-box .brand {
   width: 262px;
@@ -970,12 +995,16 @@ a:focus {
   line-height: 27px;
 }
 .brand-s-box {
-  display: -webkit-flex;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex;
   -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .brand-s-box .product {
   width: 360px;
@@ -1123,13 +1152,21 @@ a:focus {
   display: none !important;
 }
 .tabs__content.active {
-  display: -webkit-flex !important;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox !important;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex !important;
+  /* NEW - Chrome */
   display: flex !important;
 }
 .contacts {
-  display: -webkit-flex;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex;
 }
 .contacts__left {
@@ -1206,8 +1243,8 @@ a:focus {
   margin-bottom: 47px;
 }
 .catalog__img {
-  width: 100%;
-  height: auto;
+  max-width: 360px;
+  min-height: 151px;
 }
 .catalog__list {
   background-color: #ffffff;
@@ -1269,8 +1306,12 @@ a:focus {
   z-index: 1;
 }
 .catalog_call {
-  display: -webkit-flex;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex;
   margin: 0 15px 80px 15px;
   -webkit-justify-content: space-between;
@@ -1293,12 +1334,16 @@ a:focus {
   top: 26px;
 }
 .catalog-s-box {
-  display: -webkit-flex;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex;
   -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .catalog-s-box .product {
   width: 360px;
@@ -1324,12 +1369,16 @@ a:focus {
   bottom: 0;
 }
 .pagination-box {
-  display: -webkit-flex;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   margin-bottom: 78px;
 }
 .pagination__item {
@@ -1686,6 +1735,8 @@ a:focus {
 }
 .about__img {
   margin-bottom: 40px;
+  max-width: 1141px;
+  max-height: 330px;
 }
 .projects-wrap .more {
   margin-top: 17px;
@@ -1884,7 +1935,7 @@ a:focus {
 .order__btn {
   border: none;
   background: #f85e08;
-  width: 177px;
+  width: 197px;
   height: 57px;
   border-radius: 2px;
   position: relative;
@@ -2015,19 +2066,22 @@ a:focus {
   background-color: #fff;
   font-size: 18px;
   height: 85px;
-  padding-top: 30px;
+  padding-top: 25px;
 }
 .support-filter__left {
   display: inline-block;
   padding-left: 20px;
+  font-size: 0;
 }
 .support-filter__right {
   display: inline-block;
   float: right;
   padding-right: 20px;
+  margin-top: 5px;
 }
 .support-filter label {
   margin-right: 10px;
+  font-size: 18px;
 }
 .support-filter select {
   border: 1px solid #80a2c3;
@@ -2042,42 +2096,42 @@ a:focus {
 .support-filter select:focus {
   outline: none;
 }
-.support-filter .radio {
-  width: 110px;
-  position: absolute;
-  z-index: 2;
-}
-.support-filter .radio:before {
-  content: " ";
+.support-filter__list {
   display: inline-block;
-  width: 110px;
-  height: 40px;
 }
-.filter-support {
-  font-size: 0;
-  float: left;
-}
-.filter-support__item {
-  position: absolute;
+.support-filter__name {
   font-size: 18px;
-  line-height: 40px;
+  margin-right: 10px;
+}
+.support-filter__select {
+  font-size: 18px;
   display: inline-block;
-  text-align: center;
-  width: 110px;
-  height: 40px;
   border: 1px solid #0f4d78;
+  width: 110px;
+  height: 35px;
+  text-align: center;
+  line-height: 34px;
+  cursor: pointer;
+}
+.support-filter__select.active {
+  background-color: #0f4d78;
+  color: #fff;
 }
 .news-wrap .row {
   margin-bottom: 69px;
 }
 .news-box {
   font-size: 0;
-  display: -webkit-flex;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex;
   -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .news-box .new {
   width: 262px;
@@ -2297,15 +2351,19 @@ a:focus {
   padding-left: 10px;
 }
 .error-wrap {
-  display: -webkit-flex;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 .error {
   padding-top: 155px;

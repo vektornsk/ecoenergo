@@ -325,17 +325,17 @@
 									
 									<div class="support-filter cf">
 										
-										<form action="">
+										<!--<form action="">
 											
 											<div class="support-filter__left">
 												
-												<label for="">Сортировать по:</label>
-												<ul class="filter-support">
-													<li class="filter-support__item">названию</li>
-													<li class="filter-support__item">дате</li>
-												</ul>
-												
-												<input type="radio" checked="checked" name="data" class="radio alf" > <input type="radio" name="data" class="radio data">
+												<div class="switch switch-yellow">
+													<input type="radio" class="switch-input" name="view3" value="week3" id="week3" checked>
+													<label for="week3" class="switch-label switch-label-off">названию</label>
+													<input type="radio" class="switch-input" name="view3" value="month3" id="month3">
+													<label for="month3" class="switch-label switch-label-on">дате</label>
+													<span class="switch-selection"></span>
+												</div>
 												
 											</div>
 											<div class="support-filter__right">
@@ -349,7 +349,27 @@
 												</select>
 												
 											</div>
-										</form>
+										</form> -->
+										
+										<div class="support-filter__left">
+											<span class="support-filter__name">Сортировать по: </span>
+											<ul class="support-filter__list">
+												<li class="support-filter__select active">названию</li>
+												<li class="support-filter__select">дате</li>
+											</ul>
+										</div>
+										<div class="support-filter__right">
+											<span class="support-filter__name">Выводить по: </span>
+											<select name="size">
+												<option value="value1">5</option>
+												<option value="value1">10</option> 
+												<option value="value2" selected>15</option>
+												<option value="value3">25</option>
+											</select>
+											
+											
+										</div>							
+										
 									</div>
 								
 									<dl class="product-info-box__list support-list">

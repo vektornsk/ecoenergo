@@ -63,7 +63,7 @@ $(function() {
 //=== tabs ===
 	
 	$('ul.tabs').on('click', 'li:not(.active)', function() {
-		console.log($(this));
+		//console.log($(this));
 		$(this)
 			.addClass('active').siblings().removeClass('active')
 			.offsetParent().offsetParent().find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
@@ -73,10 +73,17 @@ $(function() {
 //=== tabs-product-card ===	
 	
 	$('ul.tabs-product__list').on('click', 'li:not(.active)', function() {
-		console.log($(this));
+		//console.log($(this));
 		$(this)
 			.addClass('active').siblings().removeClass('active')
 			.offsetParent().offsetParent().find('div.tabs-product__content').removeClass('active').eq($(this).index()).addClass('active');
+	});
+	
+//=== support-tubs ====	
+	$('ul.support-filter__list').on('click', 'li:not(.active)', function() {
+		//console.log($(this));
+		$(this)
+			.addClass('active').siblings().removeClass('active');
 	});
 	
 //=== slide-news ===

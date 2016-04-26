@@ -20,6 +20,7 @@
 //=== Шапка ===
 
 .header {
+	background: #11456a;
 	background: -moz-linear-gradient(top, rgba(17,69,106,1) 0%, rgba(15,77,122,1) 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(17,69,106,1)), color-stop(100%, rgba(15,77,122,1)));
 	background: -webkit-linear-gradient(top, rgba(17,69,106,1) 0%, rgba(15,77,122,1) 100%);
@@ -67,7 +68,7 @@
 		background-color: #11456a;
 		padding-left: 12px;
 		padding-right: 50px;
-		line-height: 55px;
+		height: 55px;
 		width: 359px;
 		color: #8298a7;
 		&::-webkit-input-placeholder {color:#8298a7;}
@@ -436,7 +437,9 @@
 	}
 	
 	&__img {
-		filter: grayscale();
+		filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+		filter: gray; /* IE6-9 */
+		-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
 		margin-bottom: 8px;
 		opacity: .7;
 		
@@ -523,8 +526,14 @@
 }
 
 .footer-nav {
-	display: flex;
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex; 
+	-webkit-justify-content: space-around;
 	justify-content: space-around;
+	
 	padding-top: 68px;
 	padding-bottom: 56px;
 	&__item-head {
@@ -645,6 +654,10 @@
 
 
 .form {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
 	display: flex;
 	
 	&__input {
@@ -796,6 +809,11 @@
 		z-index: 2;
 	}
 	
+	&__img {
+		max-width: 360px;
+		max-height: 257px;
+	}
+	
 	&__text {
 		background-color: rgba(15, 78, 122, 0.95);
 		height: 65px;
@@ -834,6 +852,11 @@
 		&:hover {
 			box-shadow: inset 0px -5px 0px 0px @color-green;
 		}
+	}
+	
+	&__img {
+		max-width: 262px;
+		max-height: 179px;
 	}
 	
 	&__text {
@@ -1016,7 +1039,12 @@
 
 .brand-box {
 	font-size: 0;
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
 	display: flex;
+	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
 	
 
@@ -1106,8 +1134,12 @@
 
 
 .brand-s-box {
-
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
 	display: flex;
+	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
 
 	.product {
@@ -1278,11 +1310,19 @@
 	display: none !important; 
 }
 .tabs__content.active {
+	display: -webkit-box !important;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box !important;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox !important;      /* TWEENER - IE 10 */
+	display: -webkit-flex !important;     /* NEW - Chrome */
 	display: flex !important; 
 }
 
 
 .contacts {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
 	display: flex;
 	
 	
@@ -1391,8 +1431,8 @@
 	}
 	
 	&__img {
-		width: 100%;
-		height: auto;
+		max-width: 360px;
+		min-height: 151px;
 	}
 	
 	&__list {
@@ -1464,6 +1504,10 @@
 }
 
 .catalog_call {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
 	display: flex;
 	margin: 0 15px 80px 15px;
 	justify-content: space-between;
@@ -1494,8 +1538,12 @@
 .catalog-s-wrap {}
 
 .catalog-s-box {
-	
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
 	display: flex;
+	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
 	
 	.product {
@@ -1530,7 +1578,12 @@
 //==================================== Пагинация навигация ======================================>
 
 .pagination-box {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
 	display: flex;
+	-webkit-justify-content: center; 
 	justify-content: center;
 	margin-bottom: 78px;
 }
@@ -1965,6 +2018,8 @@
 	
 	&__img {
 		margin-bottom: 40px;
+		max-width: 1141px;
+		max-height: 330px;
 	}
 }
 
@@ -2219,7 +2274,7 @@
 	&__btn {
 		border: none;
 		background: @color-orange;
-		width: 177px;
+		width: 197px;
 		height: 57px;
 		border-radius: 2px;
 		position: relative;
@@ -2402,22 +2457,26 @@
 	background-color: #fff;
 	font-size: 18px;
 	height: 85px;
-	padding-top: 30px;
+	padding-top: 25px;
 	
 	
 	&__left {
 		display: inline-block;
 		padding-left: 20px;
+		font-size: 0;
 	}
 	
 	&__right {
 		display: inline-block;
 		float: right;
 		padding-right: 20px;
+		margin-top: 5px;
+
 	}
 	
 	label {
 		margin-right: 10px;
+		font-size: 18px;
 	}
 	
 	select {
@@ -2435,37 +2494,34 @@
 		}
 	}
 	
-	.radio {
+	&__list {
+		display: inline-block;
+	}
+	
+	&__name {
+		font-size: 18px;
+		margin-right: 10px;
+	}
+	
+	&__select {
+		font-size: 18px;
+		display: inline-block;
+		border: 1px solid @color-blue-head;
 		width: 110px;
-		//height: 40px;
-		position: absolute;
-		z-index: 2;
+		height: 35px;
+		text-align: center;
+		line-height: 34px;
+		cursor: pointer;
 		
-		&:before {
-			content: " ";
-			display: inline-block;
-			width: 110px;
-			height: 40px;
-			
+		&.active {
+			background-color: @color-blue-head;
+			color: #fff;
 		}
 	}
+
 }
 
-.filter-support {
-	font-size: 0;
-	float: left;
-	&__item {
-		//top: 0;
-		position: absolute;
-		font-size: 18px;
-		line-height: 40px;
-		display: inline-block;
-		text-align: center;
-		width: 110px;
-		height: 40px;
-		border: 1px solid @color-blue-head;
-	}
-}
+
 
 //======================================== Новости ===================================================>
 .news-wrap {
@@ -2476,7 +2532,12 @@
 
 .news-box {
 	font-size: 0;
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
 	display: flex;
+	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
 	
 	.new {
@@ -2766,8 +2827,14 @@
 //======================================== 404 ===================================================>
 
 .error-wrap {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
 	display: flex;
+	-webkit-align-items: center;
 	align-items: center;
+	-webkit-justify-content: space-around; 
 	justify-content: center;
 	
 }
