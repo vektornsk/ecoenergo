@@ -161,7 +161,16 @@ $(function() {
 	
 /*=== form valid ====*/	
 	
-	
+	$('.form-name').on('focusout', function(){
+		
+		$('.form-name').removeClass('error-inp');
+		
+		var nameLenght = $('.form-name').val().length;
+		console.log(nameLenght);
+		
+		
+		
+	});
 	
 	
 	
