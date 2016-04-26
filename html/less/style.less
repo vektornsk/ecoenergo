@@ -680,6 +680,12 @@
 			outline: none;
 			color: #000;
 		}
+		
+		&.error-inp {
+			border: 1px solid red;
+			position: relative;
+			background: url('../img/icons/error-form.png') no-repeat center right;
+		}
 	}
 	
 	&__text {
@@ -1721,12 +1727,17 @@
 		padding: 0;
 		margin-top: 61px;
 		
-		.brand-label, .power-label {
+		.brand-label {
 			top: 55px;
 		}
 		
+		.power-label {
+			top: 158px;
+		}
+		
 		.brand-select {
-			width: 208px !important;
+			//width: 208px !important;
+			width: 360px !important;
 			margin-right: 11px;
 			margin-bottom: 46px;
 		}
@@ -1735,6 +1746,7 @@
 		}
 		
 		.power {
+			width: 360px;
 			margin-right: 0 !important;
 		}
 		
@@ -2873,6 +2885,68 @@
 	}
 }
 
+//============================================= popup form =============================================>
+
+.easypopup-black {
+	background: #105281;
+	z-index: 10;
+}
+
+.easypopup {
+	top: 35vh !inportant;
+	z-index: 90;
+}
+
+.easypopup-close:after, .easypopup-close:before {
+	border-color: #fff;
+}
+
+
+.popup-form {
+	
+	.forms__head {
+		text-transform: uppercase;
+		font-family: @font-neris;
+		font-size: 30px;
+		line-height: 40px;
+		margin-bottom: 20px;
+	}
+	
+	.forms__text {
+		font-family: @font-bold;
+		font-size: 20px;
+		text-transform: none;
+	}
+	
+	.form__input {
+		background-color: #fff;
+		color: #2e2e2e;
+	}
+	
+	.form__text {
+		background: #fff;
+		color: #2e2e2e;
+	}
+	
+}
+
+.popup-form-ok {
+	text-align: center;
+	
+	img {
+		margin-bottom: 20px;
+	}
+	
+	.forms__text {
+		font-size: 18px;
+		display: block;
+		margin-bottom: 20px;
+	}
+	
+	button {
+		float: none;
+	}
+}
 
 
 

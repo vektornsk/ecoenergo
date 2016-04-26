@@ -9,6 +9,8 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
+	<link rel="stylesheet" href="libs/easy-popup/easypopups.css">
+	
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 	<!--[if lt IE 9]>
@@ -172,7 +174,7 @@
 													<img src="img/company/arca.png" alt="" class="menu-company__img">
 												</a>
 											</li>
-
+											
 										</ul>
 									</li>
 									
@@ -259,11 +261,11 @@
 					</div>
 					<div class="col-md-3 head-filter">
 						<img class="head-filter__img doc" src="img/icons/doc.svg" alt="">
-						<a href="#" class="head-filter__link">Запрос на&nbsp;наличие</a>
+						<a href="#popup-form" data-name="наличие" class="head-filter__link">Запрос на&nbsp;наличие</a>
 					</div>
 					<div class="col-md-3 head-filter">
 						<img class="head-filter__img mic" src="img/icons/mic.svg" alt="">
-						<a href="#" class="head-filter__link">Консультация специалиста</a>
+						<a href="#popup-form" data-name="консультацию специалиста" class="head-filter__link">Консультация специалиста</a>
 					</div>
 					
 				</div>
@@ -315,7 +317,7 @@
 					<div class="row">	
 						
 						<div class="col-md-4">
-
+							
 							<div class="product">
 								<a href="#" class="product__link"></a>
 								<img class="product__img" src="img/product/3.jpg" alt="">
@@ -324,10 +326,10 @@
 									<span class="product__name">ICI CALDAIE REX (70 600kW)</span>
 								</div>
 							</div>
-
+							
 						</div>
 						<div class="col-md-4">
-
+							
 							<div class="product">
 								<a href="#" class="product__link"></a>
 								<img class="product__img" src="img/product/4.jpg" alt="">
@@ -336,10 +338,10 @@
 									<span class="product__name">ICI CALDAIE REX (70 600kW)</span>
 								</div>
 							</div>
-
+							
 						</div>
 						<div class="col-md-4">
-
+							
 							<div class="product">
 								<a href="#" class="product__link"></a>
 								<img class="product__img" src="img/product/5.jpg" alt="">
@@ -416,7 +418,7 @@
 					<div class="row">
 						
 						<div class="col-md-offset-3 col-md-3">
-
+							
 							<div class="new">
 								<a href="#" class="new__link"></a>
 								<img class="new__img" src="img/news/2.jpg" alt="">
@@ -425,10 +427,10 @@
 									<span class="new__name">Группа компаний "Терморос" на выставке Aqua-Therm Moscow 2016. Итоги.</span>
 								</div>
 							</div>
-
+							
 						</div>
 						<div class="col-md-3">
-
+							
 							<div class="new">
 								<a href="#" class="new__link"></a>
 								<img class="new__img" src="img/news/1.jpg" alt="">
@@ -437,10 +439,10 @@
 									<span class="new__name">Увеличение цен на DAB</span>
 								</div>
 							</div>
-
+							
 						</div>
 						<div class="col-md-3">
-
+							
 							<div class="new">
 								<a href="#" class="new__link"></a>
 								<img class="new__img" src="img/news/3.jpg" alt="">
@@ -449,7 +451,7 @@
 									<span class="new__name">Группа компаний "Терморос" на выставке Aqua-Therm Moscow 2016. Итоги.</span>
 								</div>
 							</div>
-
+							
 						</div>
 						
 					</div>
@@ -651,23 +653,63 @@
 		</section><!-- end footer__contacts-->
 		
 		<section class="footer__copyright">
-
+			
 			<div class="container footer-copy">
-
+				
 				<div class="row">
 					<span class="footer-copy__copy">&copy; EcoEnergo. 2016</span>
 					<span class="footer-copy__devel"><a href="#">Разработка сайта&nbsp;&mdash; <img class="devel" src="img/devel.svg" alt=""></a></span>
 				</div>
-
+				
 			</div>	
-
+			
 		</section><!-- end footer-copyright-->
 		
 	</div><!-- end footer -->
 
-
+<div class="form-popup ">
+	
+	<div id="popup-form" data-easypopup-in="slidetop" data-easypopup-out="slidetop">
+		<div class="forms popup-form js-form-hidden">
+			<h3 class="forms__head">Заявка на: <span class="forms__text js-text"></span></h3>
+			
+			<form action="">
+				
+				<div class="form">
+					
+					<div class="form__left">
+						<input class="form__input form-name" type="text" placeholder="Ваше имя">
+						<input class="form__input form-tel" type="tel" placeholder="Ваш телефон">
+						<input class="form__input error-inp form-email" type="email" placeholder="E-mail">
+						
+					</div>
+					<div class="form__right">
+						<textarea class="form__text" placeholder="Опишите вашу задачу"></textarea>
+					</div>
+					
+				</div>
+				
+				<input class="form__btn" type="submit" value="Оформить заявку">
+				
+			</form>
+			
+		</div><!-- end forms -->
+		
+		<div class="forms popup-form popup-form-ok">
+			<img src="img/icons/form-ok.png" alt="">
+			<h3 class="forms__head">Заявка оформлена</h3>
+			<span class="forms__text">В ближайшее время с вами свяжется наш сотрудник</span>
+			<button class="form__btn js-btn-close">OK</button>
+			
+		</div>
+		
+	</div> 
+	
+	
+</div>
 
 <script src="libs/jquery-2.1.3.min.js"></script>
+<script src="libs/easy-popup/easypopups.js"></script>
 <script src="js/main.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 </body>

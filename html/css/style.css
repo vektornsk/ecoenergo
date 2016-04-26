@@ -630,6 +630,11 @@ a:focus {
   outline: none;
   color: #000;
 }
+.form__input.error-inp {
+  border: 1px solid red;
+  position: relative;
+  background: url('../img/icons/error-form.png') no-repeat center right;
+}
 .form__text {
   width: 484px;
   height: 201px;
@@ -1480,12 +1485,14 @@ a:focus {
   padding: 0;
   margin-top: 61px;
 }
-.product-search .search-box__form .brand-label,
-.product-search .search-box__form .power-label {
+.product-search .search-box__form .brand-label {
   top: 55px;
 }
+.product-search .search-box__form .power-label {
+  top: 158px;
+}
 .product-search .search-box__form .brand-select {
-  width: 208px !important;
+  width: 360px !important;
   margin-right: 11px;
   margin-bottom: 46px;
 }
@@ -1495,6 +1502,7 @@ a:focus {
   background: transparent;
 }
 .product-search .search-box__form .power {
+  width: 360px;
   margin-right: 0 !important;
 }
 .product-search .search-box__form .price-label {
@@ -2404,4 +2412,50 @@ a:focus {
 }
 .error__link:hover {
   text-decoration: none;
+}
+.easypopup-black {
+  background: #105281;
+  z-index: 10;
+}
+.easypopup {
+  top: 35vh !inportant;
+  z-index: 90;
+}
+.easypopup-close:after,
+.easypopup-close:before {
+  border-color: #fff;
+}
+.popup-form .forms__head {
+  text-transform: uppercase;
+  font-family: "nerisblack", sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.popup-form .forms__text {
+  font-family: "PTSansBold", sans-serif;
+  font-size: 20px;
+  text-transform: none;
+}
+.popup-form .form__input {
+  background-color: #fff;
+  color: #2e2e2e;
+}
+.popup-form .form__text {
+  background: #fff;
+  color: #2e2e2e;
+}
+.popup-form-ok {
+  text-align: center;
+}
+.popup-form-ok img {
+  margin-bottom: 20px;
+}
+.popup-form-ok .forms__text {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 20px;
+}
+.popup-form-ok button {
+  float: none;
 }

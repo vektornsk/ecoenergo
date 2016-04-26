@@ -1,6 +1,6 @@
 $(function() {
 
-//=== Меню ховер ===
+/*=== Меню ховер ===*/
 	
 	$(".menu-sub").hover(
 		function() {
@@ -20,7 +20,7 @@ $(function() {
 		}
 	);
 	
-//=== Fix меню ===
+/*=== Fix меню ===*/
 	var stickyHeaderTop = $('#nav').offset().top;
 
 	$(window).scroll(function(){
@@ -39,7 +39,7 @@ $(function() {
 	});
 	
 	
-//=== proect ===
+/*=== proect ===*/
 	
 	var bgColor = "release__bg-color1";
 	
@@ -60,7 +60,7 @@ $(function() {
 		}
 	);
 	
-//=== tabs ===
+/*=== tabs ===*/
 	
 	$('ul.tabs').on('click', 'li:not(.active)', function() {
 		//console.log($(this));
@@ -70,7 +70,7 @@ $(function() {
 	});
 	
 	
-//=== tabs-product-card ===	
+/*=== tabs-product-card ===*/	
 	
 	$('ul.tabs-product__list').on('click', 'li:not(.active)', function() {
 		//console.log($(this));
@@ -79,7 +79,7 @@ $(function() {
 			.offsetParent().offsetParent().find('div.tabs-product__content').removeClass('active').eq($(this).index()).addClass('active');
 	});
 	
-//=== support-tubs ====	
+/*=== support-tubs ====	*/
 	$('ul.support-filter__list').on('click', 'li:not(.active)', function() {
 		//console.log($(this));
 		$(this)
@@ -103,7 +103,7 @@ $(function() {
 		
 	}
 	
-//=== slide-wrap ===
+/*=== slide-wrap ===*/
 	
 	if($('.slide-wrap').length){
 		
@@ -120,7 +120,7 @@ $(function() {
 		
 	}
 	
-//=== do 9Ikop9I ====
+/*=== do 9Ikop9I ====*/
 	$('.js-link').bind("click", function(e){
 		e.preventDefault();
 		
@@ -132,7 +132,7 @@ $(function() {
 	});
 	
 	
-//=== map ===
+/*=== map ===*/
 	
 	if ($('.map').length){
 	
@@ -149,5 +149,23 @@ $(function() {
 	
 	}
 	
-
-}); //$
+/*=== form data-name ====*/
+	
+	$('a').on('click', function(){
+		var t = $(this).data('name');
+			
+		$('.js-text').html(t);
+		
+		
+	});
+	
+/*=== form valid ====*/	
+	
+	
+	
+	
+	
+	
+	
+	
+}); /*$*/
