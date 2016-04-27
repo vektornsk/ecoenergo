@@ -9,6 +9,7 @@
 		
 		&__inp {
 			width: 83%;
+			border-radius: 0;
 		}
 	}
 	
@@ -52,7 +53,13 @@
 	}
 	
 	.product {
-		font-size: 16px;
+		
+		&__text {
+			font-size: 16px;
+			height: 90px;
+			margin-top: -40px;
+			
+		}
 	}
 	
 	.new {
@@ -81,6 +88,13 @@
 		}
 	}
 	
+	.footer {
+		&__menu {
+			background-size: contain;
+		}
+		
+	}
+	
 	.footer-contact {
 		
 		.col-md-4 {
@@ -105,6 +119,152 @@
 // Medium Devices, Desktops 
 @media only screen and (max-width : 992px) {
 
+	
+	.search {
+		position: relative;
+		margin-left: 55%;
+		width: 45%;
+		border: 2px solid #265475;
+		
+		
+		
+		&__inp {
+			&::-webkit-input-placeholder {font-size: 0;}
+			&::-moz-placeholder          {font-size: 0;}
+			&:-moz-placeholder           {font-size: 0;}
+			&:-ms-input-placeholder      {font-size: 0;}
+		}
+		
+		
+		&__inp {
+			width: 5%;
+			position: relative;
+			z-index: 2;
+			background: transparent;
+			
+			
+			&:focus {
+				position: relative;
+				width: 254px;
+				
+			}
+		}
+	}
+	
+	.menu-768 {
+		border-left: 1px solid #093656;
+		.cf;
+		width: 160px;
+		height: 62px;
+		margin-right: -23px;
+		float: right;
+		background: url("../img/icons/menu.png") no-repeat left center;
+		cursor: pointer;
+		
+		
+		
+		&:before {
+			content: "Меню";
+			font-size: 18px;
+			font-family: @font-neris;
+			color: #fff;
+			line-height: 60px;
+			padding-left: 66px;
+			
+		}
+		
+		
+		.menu__item {
+			width: 181px;
+			display: none;
+			background: #fff;
+			border-right: 0;
+			text-align: left;
+			
+			&:not(:last-child){
+				border-bottom: 1px solid #dfdfdf;
+			}
+			
+		}
+		.menu__link {
+			color: @color-blue-head;
+			padding-left: 27px;
+			font-size: 18px;
+			
+			&:hover {
+				color: #fff;
+			}
+			
+			&:after {
+				background: url(../img/icons/arrow-r.png);
+				width: 5px;
+				height: 9px;
+				left: 12px;
+				top: 26px;
+				-ms-transform: rotate(-180deg); /* IE 9 */
+				-webkit-transform: rotate(-180deg); /* Chrome, Safari, Opera */
+				transform: rotate(-180deg);
+			}
+			
+		}
+	}
+	
+	.head-filter {
+		&.col-md-offset-3 { margin-left: 0;}
+		
+		margin-left: 40% !important;
+		width: 56%;
+		
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+		
+		&__img {
+			top: 25px;
+			left: 21%;
+			height: 80px;
+		}
+		
+		&__link {
+			height: 131px;
+			padding-left: 170px;
+			padding-top: 28px;
+			
+			&:after {
+				height: 80px;
+				width: 9px;
+				margin-left: -42px;
+				top: -5px;
+			}
+		}
+	}
+	
+	.head-2 {
+		font-size: 21px;
+	}
+	
+	.product {
+		
+		&__text {
+			padding: 10px;
+		}
+	}
+	
+	.release {
+
+		&__bg_left {
+			margin-left: -99514px;
+		}
+	}
+
+	.release-more {
+
+		&__link {
+			font-size: 20px;
+			margin-left: 40px;
+		}
+	}
+	
 }
 
 // Small Devices, Tablets 

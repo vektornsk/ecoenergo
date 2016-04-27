@@ -38,6 +38,38 @@ $(function() {
 		}
 	});
 	
+/*=== menu-768 ====*/
+	
+	var hBody = $("body").width();
+	
+	$(window).resize( function() {
+		hBody = $("body").width();
+		console.log(hBody);
+	});
+	
+	if (hBody <= 992){
+		
+		$('.js-sm-menu').on('click', function(){
+			
+			if($('.js-sm-menu').hasClass('js-sm-menu-open')){
+				$('.js-sm-menu').removeClass('js-sm-menu-open');
+			}else {
+				$('.js-sm-menu').addClass('js-sm-menu-open')
+			
+			}
+			
+			$('.js-sm-menu-item').toggle();
+		});
+		
+	} 
+	
+	if (hBody <= 1024){
+		$('.js-none-link').on('click', function(e){
+			
+			e.preventDefault();
+
+		});
+	}
 	
 /*=== proect ===*/
 	

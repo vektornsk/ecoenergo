@@ -92,6 +92,10 @@
 		position: absolute;
 		right: 22px;
 		bottom: 15px;
+		
+		&:focus {
+			outline: none;
+		}
 	}
 }
 
@@ -144,6 +148,19 @@
 }
 
 //=== Меню ===
+
+.menu-768 {
+	display: inline-block;
+	
+	&.js-sm-menu-open {
+		
+		background: #f85e08 url('../img/icons/menu-close.png') no-repeat left center;
+		
+		&:before {
+			content: "Закрыть"
+		}
+	}
+}
 
 .menu {
 	margin: 0;
@@ -891,14 +908,15 @@
 	
 	&__img {
 		max-width: 360px;
-		max-height: 257px;
+		max-height: 364px;
 		width: 100%;
+		height: auto;
 	}
 	
 	&__text {
 		background-color: rgba(15, 78, 122, 0.95);
-		height: 65px;
-		margin-top: -65px;
+		height: 100px;
+		margin-top: -40px;
 		position: relative;
 		z-index: 1;
 		color: #ffffff;
