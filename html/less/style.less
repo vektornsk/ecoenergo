@@ -461,7 +461,77 @@
 	}
 }
 
+//=== Меню компании 2 ===
+.menu-brand {
+	
+	
+	&__item {
+		list-style: none;
+		
+		
+		&-box {
+			position: relative;
+			width: 255px;
+			height: 171px;
+		}
+	}
+	
+	&__link {
+		display: block;
+		width: 100%;
+		height: 100%;
+		outline: none;
+		&:focus {
+			outline: none;
+		}
+	}
+	
+	&__img {
+		
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+}
 
+.slide-brand {
+	margin: 0 auto;
+	text-align: center;
+	
+	.slick-dots {
+		
+		margin-left: -10px;
+		
+		li {
+			list-style: none;
+			display: inline-block;
+			margin-bottom: 20px;
+			margin-left: 10px;
+			
+			&.slick-active {
+				button {
+					background: @color-blue-head;
+				}
+			}
+			
+			button {
+				background: #fff;
+				border: 1px solid @color-blue-head;
+				width: 15px;
+				height: 15px;
+				font-size: 0;
+				outline: none;
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+	}
+	
+}
 
 
 
@@ -1030,6 +1100,10 @@
 			&:before {
 				background-position: -35px 0px;
 			}
+		}
+		
+		&:focus {
+			color: @color-blue-head;
 		}
 		
 		&:before {

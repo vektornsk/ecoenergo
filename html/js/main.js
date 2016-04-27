@@ -119,6 +119,22 @@ $(function() {
 		
 		
 	}
+
+/*=== slide-brand-menu =====*/	
+	if ($('.slide-brand').length){
+		$('.slide-brand').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			dots: true,
+			infinite: true,
+			speed: 300,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			arrows: false
+		});
+	}
+	
+	
 	
 /*=== do 9Ikop9I ====*/
 	$('.js-link').bind("click", function(e){
