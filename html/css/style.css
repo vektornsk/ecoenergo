@@ -2078,7 +2078,7 @@ a:focus {
   display: block;
 }
 .tabs-product__content .product-info-box__name {
-  padding-left: 25px;
+  padding-left: 15px;
 }
 .tabs-product__content .product-info-box__text {
   width: 10%;
@@ -2120,7 +2120,7 @@ a:focus {
   width: 20% !important;
 }
 .support-list__four {
-  width: 10% !important;
+  width: 11% !important;
 }
 .support-list__link {
   font-family: "PTSansBold", sans-serif;
@@ -2215,9 +2215,10 @@ a:focus {
 }
 .news-box .new {
   width: 262px;
-}
-.news-box .new:not(:nth-child(4n)) {
   margin-right: 29px;
+}
+.news-box .new:nth-child(4n) {
+  margin-right: 0px;
 }
 .article {
   font-size: 18px;
@@ -2598,6 +2599,17 @@ a:focus {
   .footer-contact .form__text {
     width: 333px;
   }
+  /************************* support 2 *******************************/
+  .news-box .new {
+    width: 294px;
+    margin-right: 29px;
+  }
+  .news-box .new:nth-child(4n) {
+    margin-right: 29px;
+  }
+  .news-box .new:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 @media only screen and (max-width: 992px) {
   .search {
@@ -2765,5 +2777,25 @@ a:focus {
   .address__list {
     margin-top: -25px;
     margin-left: 380px;
+  }
+  /************************* support *******************************/
+  .support-list__one {
+    width: 37% !important;
+  }
+  .support-list__two {
+    width: 23.5% !important;
+  }
+  .support-list__tree {
+    width: 17% !important;
+  }
+  .support-list__four {
+    width: 5% !important;
+  }
+  .support-list__four span {
+    display: none;
+  }
+  /************************* support 2 *******************************/
+  .news-box .new {
+    width: 220px;
   }
 }
