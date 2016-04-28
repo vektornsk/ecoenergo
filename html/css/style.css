@@ -2566,6 +2566,10 @@ a:focus {
     font-size: 28px;
     letter-spacing: -1px;
   }
+  .heads__h2 {
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
   .product__text {
     font-size: 16px;
     height: 90px;
@@ -2609,6 +2613,10 @@ a:focus {
   }
   .news-box .new:nth-child(3n) {
     margin-right: 0;
+  }
+  /************************* projects *******************************/
+  .projects-box .release__text {
+    width: 70%;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -2797,5 +2805,9 @@ a:focus {
   /************************* support 2 *******************************/
   .news-box .new {
     width: 220px;
+  }
+  /************************* projects *******************************/
+  .projects-box .release__text {
+    width: 98%;
   }
 }
