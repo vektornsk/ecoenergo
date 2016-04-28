@@ -2446,6 +2446,12 @@ a:focus {
   -ms-flex-pack: center;
       justify-content: center;
 }
+.error-wrap-text {
+  border-left: 8px solid #a4ce4d;
+  margin-left: 300px;
+  padding-top: 7px;
+  padding-left: 20px;
+}
 .error {
   padding-top: 155px;
   padding-bottom: 348px;
@@ -2471,12 +2477,12 @@ a:focus {
   font-size: 24px;
   line-height: 43px;
   color: #11456a;
-  margin-top: 7px;
 }
 .error__text {
   font-size: 18px;
   line-height: 25px;
   color: #11456a;
+  padding-bottom: 15px;
 }
 .error__link {
   color: #11456a;
@@ -2617,6 +2623,13 @@ a:focus {
   /************************* projects *******************************/
   .projects-box .release__text {
     width: 70%;
+  }
+  /************************* 404 *******************************/
+  .error {
+    width: 81%;
+  }
+  .error__text {
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -2809,5 +2822,24 @@ a:focus {
   /************************* projects *******************************/
   .projects-box .release__text {
     width: 98%;
+  }
+  /************************* 404 *******************************/
+  .error-wrap-text {
+    margin-left: 0;
+    padding-top: 40px;
+    padding-left: 0;
+    border-left: 0;
+  }
+  .error {
+    padding-top: 145px;
+    padding-bottom: 170px;
+    text-align: center;
+    width: 71%;
+  }
+  .error__img {
+    float: none;
+    padding-bottom: 40px;
+    border-bottom: 8px solid #a4ce4d;
+    margin-right: 0px;
   }
 }
