@@ -1821,6 +1821,7 @@ a:focus {
   margin-bottom: 40px;
   max-width: 1141px;
   max-height: 330px;
+  width: 100%;
 }
 .projects-wrap .more {
   margin-top: 17px;
@@ -2254,6 +2255,8 @@ a:focus {
   height: 66px;
   background-color: #0f4d78;
   text-align: center;
+  margin-left: 15px;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 .btn-prev:hover {
@@ -2672,6 +2675,58 @@ a:focus {
     width: 942px;
     height: 465px;
   }
+  /************************* article *******************************/
+  .article .call__item {
+    width: 214px;
+  }
+  .article .call__name_specialist:before {
+    left: 45px;
+  }
+  .article .call__name_existence:before {
+    left: 63px;
+  }
+  /************************* about *******************************/
+  .about-wrap .article .call__item {
+    height: 214px;
+    padding-top: 75px;
+  }
+  .about-wrap .article .call__name {
+    font-size: 20px;
+  }
+  /************************* Этапы строительства  *******************************/
+  .level {
+    width: 300px;
+  }
+  .level .product__name {
+    font-size: 16px;
+  }
+  .level .product__text {
+    height: 100px;
+    margin-top: -100px;
+    padding: 10px;
+  }
+  /************************* Патнерам  *******************************/
+  .partners-wrap .partners__item {
+    margin-bottom: 60px;
+  }
+  .partners-wrap .form {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .partners-wrap .form__input {
+    display: inline-block;
+    width: 291px;
+  }
+  .partners-wrap .form__text {
+    width: 601px;
+    height: 250px;
+  }
+  .partners-wrap .form__btn {
+    margin-top: 10px;
+    margin-right: 14px;
+    margin-bottom: 0;
+  }
 }
 @media only screen and (max-width: 992px) {
   .search {
@@ -2891,5 +2946,43 @@ a:focus {
   .contacts-wrap .map #mapN {
     width: 719px;
     height: 461px;
+  }
+  /************************* article *******************************/
+  .article .call__item {
+    display: inline-block;
+    margin-bottom: 0;
+    width: 350px;
+    height: 245px;
+    margin-top: 20px;
+  }
+  .article .call__item:first-child {
+    margin-right: 15px;
+  }
+  .article .call__name_specialist:before {
+    left: 112px;
+  }
+  .article .call__name_existence:before {
+    left: 131px;
+  }
+  /************************* about *******************************/
+  .about-wrap .article {
+    margin-bottom: 20px;
+  }
+  /************************* Этапы строительства  *******************************/
+  .level {
+    width: 340px;
+  }
+  /************************* Патнерам  *******************************/
+  .partners-wrap .form {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .partners-wrap .form__input {
+    width: 217px;
+  }
+  .partners-wrap .form__text {
+    width: 455px;
+    height: 200px;
   }
 }

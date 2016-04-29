@@ -146,7 +146,15 @@ $(function() {
 			arrows: true,
 			prevArrow: $('.prev-slide'),
 			nextArrow: $('.next-slide'),
-			
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 2,
+						
+					}
+				}
+			]
 		});
 		
 		
