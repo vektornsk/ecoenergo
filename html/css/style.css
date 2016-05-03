@@ -1057,8 +1057,8 @@ a:focus {
 .brand-info__img {
   background-color: #fff;
   position: relative;
-  width: 360px;
-  height: 196px;
+  width: 100%;
+  height: 200px;
 }
 .brand-info__img img {
   position: absolute;
@@ -1086,25 +1086,19 @@ a:focus {
 }
 .brand-s-box .product {
   width: 360px;
-  height: 257px;
   background-color: #fff;
-}
-.brand-s-box .product:not(:nth-child(3n)) {
   margin-right: 29px;
 }
-.brand-s-box .product__img {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+.brand-s-box .product:nth-child(3n) {
+  margin-right: 0px;
 }
 .brand-s-box .product__text {
   width: 100%;
   padding-right: 20px;
-  position: absolute;
   bottom: 0;
+  margin-top: 0;
+  height: 90px;
+  background-color: #0F4E7A;
 }
 .brand-s-box .product .search-box__form {
   margin-top: 25px;
@@ -1326,7 +1320,9 @@ a:focus {
 }
 .catalog__img {
   max-width: 360px;
-  min-height: 151px;
+  max-height: 151px;
+  width: 100%;
+  height: auto;
 }
 .catalog__list {
   background-color: #ffffff;
@@ -1334,10 +1330,8 @@ a:focus {
   height: 420px;
 }
 .catalog__list__head {
-  font-size: 30px;
   font-family: "nerisblack", sans-serif;
   text-transform: uppercase;
-  line-height: 36px;
   color: #145581;
   border-bottom: 2px solid #0f4d78;
   padding-bottom: 12px;
@@ -1369,6 +1363,8 @@ a:focus {
   left: 10px;
 }
 .catalog__link__head {
+  font-size: 30px;
+  line-height: 36px;
   color: #0f4d78;
 }
 .catalog__link__head:hover {
@@ -2736,6 +2732,27 @@ a:focus {
   .brand-box .brand:nth-child(3n) {
     margin-right: 0px;
   }
+  /************************* Бренды select *******************************/
+  .brand-s-box .product {
+    width: 294px;
+  }
+  .solution-box .col-md-8 {
+    width: 59.666667%;
+  }
+  /************************* Каталог *******************************/
+  .catalog .catalog_call .call__item {
+    width: 450px;
+    padding-left: 180px;
+  }
+  .catalog .catalog_call .call__name_specialist:before {
+    left: 42px;
+  }
+  .catalog .catalog_call .call__name_existence:before {
+    left: 69px;
+  }
+  .catalog__link__head {
+    font-size: 28px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .search {
@@ -3006,5 +3023,49 @@ a:focus {
   }
   .brand-box .brand__text {
     padding-top: 180px;
+  }
+  /************************* Бренды select *******************************/
+  .brand-s-box .product {
+    width: 220px;
+  }
+  .brand-s-box .product__text {
+    height: 100px;
+  }
+  .solution {
+    margin-bottom: 40px;
+  }
+  .solution-box .col-md-8 {
+    width: 100%;
+  }
+  .solution-box .call__item {
+    margin-bottom: 35px;
+    width: 340px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .solution-box .call__item:first-child {
+    margin-right: 35px;
+  }
+  /************************* Фильтр  *******************************/
+  .filter {
+    margin-bottom: 20px;
+  }
+  .filter__item {
+    font-size: 14px;
+  }
+  .filter-brand__link {
+    font-size: 17px;
+  }
+  /************************* Каталог *******************************/
+  .catalog .catalog_call .call__item {
+    width: 350px;
+    padding-top: 49px;
+  }
+  .catalog__link__head {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .catalog .catalog__list__item {
+    font-size: 15px;
   }
 }
