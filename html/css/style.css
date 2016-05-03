@@ -1016,9 +1016,10 @@ a:focus {
   overflow: hidden;
   background-color: #fff;
   margin-bottom: 32px;
-}
-.brand:not(:nth-child(4n)) {
   margin-right: 29px;
+}
+.brand:nth-child(4n) {
+  margin-right: 0px;
 }
 .brand:hover {
   box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.41);
@@ -2727,6 +2728,14 @@ a:focus {
     margin-right: 14px;
     margin-bottom: 0;
   }
+  /************************* Бренды *******************************/
+  .brand-box .brand {
+    margin-right: 77px;
+    margin-bottom: 70px;
+  }
+  .brand-box .brand:nth-child(3n) {
+    margin-right: 0px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .search {
@@ -2984,5 +2993,18 @@ a:focus {
   .partners-wrap .form__text {
     width: 455px;
     height: 200px;
+  }
+  /************************* Бренды *******************************/
+  .brand-box .brand {
+    width: 220px;
+    height: 220px;
+    margin-right: 29px;
+    margin-bottom: 29px;
+  }
+  .brand-box .brand:nth-child(3n) {
+    margin-right: 0px;
+  }
+  .brand-box .brand__text {
+    padding-top: 180px;
   }
 }
