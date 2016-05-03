@@ -1565,7 +1565,7 @@ a:focus {
   top: 158px;
 }
 .product-search .search-box__form .brand-select {
-  width: 360px !important;
+  width: 100% !important;
   margin-right: 11px;
   margin-bottom: 46px;
 }
@@ -1575,7 +1575,7 @@ a:focus {
   background: transparent;
 }
 .product-search .search-box__form .power {
-  width: 360px;
+  width: 100%;
   margin-right: 0 !important;
 }
 .product-search .search-box__form .price-label {
@@ -2753,6 +2753,13 @@ a:focus {
   .catalog__link__head {
     font-size: 28px;
   }
+  /************************* Каталог - select *******************************/
+  .catalog-s-box .product {
+    width: 294px;
+  }
+  .catalog-s-box .product-search .search-box__form .go-form_loop:before {
+    left: 85px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .search {
@@ -3067,5 +3074,28 @@ a:focus {
   }
   .catalog .catalog__list__item {
     font-size: 15px;
+  }
+  /************************* Каталог - select *******************************/
+  .catalog-s-box .product {
+    width: 220px;
+    height: 330px;
+  }
+  .catalog-s-box .product-search .search-box__form {
+    margin-top: 50px;
+  }
+  .catalog-s-box .product-search .search-box__form .brand-label {
+    top: 40px;
+  }
+  .catalog-s-box .product-search .search-box__form .power-label {
+    top: 141px;
+  }
+  .catalog-s-box .product-search .search-box__form .go-form_loop:before {
+    left: 45px;
+  }
+  .catalog-s-box .product-search__head {
+    font-size: 20px;
+  }
+  .catalog-s-box .product-search .search-box__form .go-form_loop {
+    margin-top: 27px;
   }
 }
