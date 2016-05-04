@@ -40,30 +40,37 @@ $(function() {
 	
 /*=== menu-768 ====*/
 	
-	var hBody = $("body").width();
+	var wBody = $("body").width();
 	
 	$(window).resize( function() {
-		hBody = $("body").width();
-		console.log(hBody);
+		wBody = $("body").width();
+		console.log(wBody);
 	});
 	
-	if (hBody <= 992){
+	if (wBody <= 992){
 		
-		$('.js-sm-menu').on('click', function(){
+		$('.js-sm-menu').on('click',  function(){
+			
+			var thes = $('this');
+			console.log(thes);
+			
+			$('.js-sm-menu-item').show();
+				
 			
 			if($('.js-sm-menu').hasClass('js-sm-menu-open')){
 				$('.js-sm-menu').removeClass('js-sm-menu-open');
+				$('.js-sm-menu-item').hide();
 			}else {
 				$('.js-sm-menu').addClass('js-sm-menu-open')
 			
 			}
 			
-			$('.js-sm-menu-item').toggle();
+			
 		});
 		
 	} 
 	
-	if (hBody <= 1024){
+	if (wBody <= 1024){
 		$('.js-none-link').on('click', function(e){
 			
 			e.preventDefault();

@@ -87,6 +87,7 @@ a:focus {
   height: 836px;
   margin-top: -836px;
 }
+/*=== Шапка ===*/
 .header {
   background: #11456a;
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #11456a), color-stop(100%, #0f4d7a));
@@ -101,6 +102,7 @@ a:focus {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+/*=== Логотип ===*/
 .logo {
   width: 269px;
   position: relative;
@@ -116,6 +118,7 @@ a:focus {
   position: absolute;
   left: -9999px;
 }
+/*=== Поиск ===*/
 .search {
   width: 100%;
   border-bottom: 2px solid rgba(38, 84, 117, 0.5);
@@ -159,6 +162,7 @@ a:focus {
 .search__btn:focus {
   outline: none;
 }
+/*=== Телефон ===*/
 .phone {
   width: 225px;
   height: 57px;
@@ -191,14 +195,18 @@ a:focus {
 .phone__number_color {
   color: #8298a7;
 }
+/*=== Навигация ===*/
 #nav {
   background-color: #0d4e7b;
 }
 .nav {
   height: 62px;
 }
+/*=== Меню ===*/
 .menu-768 {
   display: inline-block;
+  position: relative;
+  z-index: 2;
 }
 .menu-768.js-sm-menu-open {
   background: #f85e08 url('../img/icons/menu-close.png') no-repeat left center;
@@ -291,11 +299,24 @@ a:focus {
   color: #fff;
   background-color: #f85e08;
 }
+/*=== Подменю ===*/
 .menu-open.open .menu-sub {
   display: block;
 }
 .menu-open:hover .menu-sub {
   display: block;
+}
+@media screen and (max-width: 992px) {
+  .menu-open:hover .menu-sub {
+    position: absolute;
+    left: -174px;
+    margin-top: -62px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .menu-open:hover .menu-sub_size {
+    left: -230px;
+  }
 }
 .menu__item_catalog .menu-sub {
   display: none;
@@ -383,6 +404,7 @@ a:focus {
   background-color: #f2f2f2;
   color: #38689c;
 }
+/*=== Подменю меню ===*/
 .menu-sub-open {
   position: relative;
 }
@@ -421,6 +443,7 @@ a:focus {
   background-color: #f2f2f2;
   color: #38689c;
 }
+/*=== Меню компании ===*/
 .menu-company {
   overflow: hidden;
   padding-top: 25px;
@@ -459,6 +482,7 @@ a:focus {
           filter: none;
   opacity: 1;
 }
+/*=== Меню компании 2 ===*/
 .menu-brand__item {
   list-style: none;
 }
@@ -511,6 +535,7 @@ a:focus {
 .slide-brand .slick-dots li button:focus {
   outline: none;
 }
+/*=== Фильтр хед ===*/
 .head-filter {
   position: relative;
 }
@@ -558,9 +583,11 @@ a:focus {
   color: #ffffff;
   box-shadow: 2px 4px 15px 0px rgba(0, 0, 0, 0.52);
 }
+/*=== Footer Подвал ===*/
 .footer {
   overflow: hidden;
 }
+/*=== Навигация footer ===*/
 .footer__top {
   background: #fff;
 }
@@ -600,10 +627,12 @@ a:focus {
 .footer-nav__item a:hover {
   color: #0D4E7B;
 }
+/*=== Контакты footer ===*/
 .footer__contacts {
   background-color: #11456a;
   padding-top: 50px;
 }
+/*=========================================== Адресс =======================>*/
 .address {
   padding-top: 80px;
   font-size: 18px;
@@ -650,6 +679,7 @@ a:focus {
   position: relative;
   top: 4px;
 }
+/*=== footer форма ===*/
 .forms {
   color: #ffffff;
 }
@@ -741,6 +771,7 @@ a:focus {
 .form__btn:hover {
   background-color: #e05409;
 }
+/*=== footer Копирайт ===*/
 .footer__copyright {
   background-color: #0c395a;
   height: 63px;
@@ -773,9 +804,11 @@ a:focus {
 .devel {
   opacity: 0.3;
 }
+/*======================================== Контент index ===================================================>*/
 .margin-98 {
   margin-top: 98px;
 }
+/*=== Заголовок н2 ===*/
 .head-2 {
   font-family: "nerisblack", sans-serif;
   font-size: 30px;
@@ -790,6 +823,7 @@ a:focus {
 .head-2_orange {
   border-left: 8px solid #f85e08;
 }
+/*=== Продукт главная ===*/
 .product {
   position: relative;
   overflow: hidden;
@@ -828,6 +862,7 @@ a:focus {
 .product__class {
   display: block;
 }
+/*=== Новости главная ===*/
 .new {
   position: relative;
   overflow: hidden;
@@ -866,6 +901,7 @@ a:focus {
   color: #949494;
   font-family: "PTSansRegular", sans-serif;
 }
+/*=== больше ===*/
 .more-link {
   height: 66px;
   text-align: center;
@@ -911,6 +947,7 @@ a:focus {
   top: 2px;
   left: -13px;
 }
+/*=== Проекты главная ===*/
 .release {
   position: relative;
 }
@@ -994,6 +1031,7 @@ a:focus {
   left: -12px;
   top: 5px;
 }
+/*======================================== Бренды ===================================================>*/
 .brand-box {
   font-size: 0;
   /* OLD - iOS 6-, Safari 3.1-6 */
@@ -1051,6 +1089,8 @@ a:focus {
   padding-top: 190px;
   text-transform: uppercase;
 }
+/*======================================== Бренды выбранное ===================================================>*/
+/*=== Бренды инфо ===*/
 .brand-info {
   margin-bottom: 43px;
 }
@@ -1125,6 +1165,7 @@ a:focus {
   height: 48px;
   line-height: 48px;
 }
+/*============================= Фильтр для брендов ===========*/
 .filter-brand {
   border-bottom: 2px solid #a4ce4d;
   margin-bottom: 30px;
@@ -1154,6 +1195,7 @@ a:focus {
   background: #a4ce4d;
   color: #fff;
 }
+/*========================================= Партнерам =================================================>*/
 .partners__item {
   margin-bottom: 90px;
 }
@@ -1194,6 +1236,7 @@ a:focus {
 .partners-form .form__text:-ms-input-placeholder {
   color: #0f4d78;
 }
+/*======================================== Контакты ===================================================>*/
 .margin-40 {
   margin-top: 40px;
 }
@@ -1261,6 +1304,7 @@ a:focus {
 .contacts .address__item.loc:before {
   top: 25px;
 }
+/*map*/
 .map {
   margin-bottom: 45px;
 }
@@ -1315,6 +1359,7 @@ a:focus {
   left: 40px;
   top: 18px;
 }
+/*======================================== Каталог ===================================================>*/
 .catalog__item {
   margin-bottom: 47px;
 }
@@ -1411,6 +1456,7 @@ a:focus {
   left: 126px;
   top: 26px;
 }
+/*======================================== Каталог выбранное ===================================================>*/
 .catalog-s-box {
   /* OLD - iOS 6-, Safari 3.1-6 */
   /* OLD - Firefox 19- (buggy but mostly works) */
@@ -1446,6 +1492,7 @@ a:focus {
   position: absolute;
   bottom: 0;
 }
+/*==================================== Пагинация навигация ======================================>*/
 .pagination-box {
   /* OLD - iOS 6-, Safari 3.1-6 */
   /* OLD - Firefox 19- (buggy but mostly works) */
@@ -1507,6 +1554,7 @@ a:focus {
   background-color: #a4ce4d;
   color: #fff;
 }
+/*=================================== Популярные решения ======================================>*/
 .solution-box .call__item {
   width: 361px;
   margin-top: 0;
@@ -1530,6 +1578,7 @@ a:focus {
   font-size: 18px;
   line-height: 27px;
 }
+/*=================================== Доставка и монтаж ======================================>*/
 .delivery-box {
   margin-bottom: 102px;
 }
@@ -1542,6 +1591,7 @@ a:focus {
   font-size: 18px;
   line-height: 27px;
 }
+/*=============== Поиск по категории ===================>*/
 .product-search {
   text-align: center;
   background-color: transparent !important;
@@ -1612,6 +1662,7 @@ a:focus {
 .product-search:hover {
   box-shadow: none;
 }
+/*======================================== Фильтр товара ===================================================>*/
 .filter {
   margin-bottom: 46px;
 }
@@ -1642,6 +1693,7 @@ a:focus {
   border-radius: 2px;
   height: 28px;
 }
+/*======================================== Форма поиска ===================================================>*/
 .search-box {
   background-color: #ffffff;
   margin-bottom: 47px;
@@ -1788,6 +1840,7 @@ a:focus {
   right: 145px;
   top: 15px;
 }
+/*======================================== О компании ===================================================>*/
 .about-wrap .article {
   margin-bottom: 60px;
 }
@@ -1820,6 +1873,7 @@ a:focus {
   max-height: 330px;
   width: 100%;
 }
+/*======================================== Реализованные проекты ===================================================>*/
 .projects-wrap .more {
   margin-top: 17px;
   margin-bottom: 79px;
@@ -1833,6 +1887,7 @@ a:focus {
 .projects-box .release__text {
   width: 68%;
 }
+/*=========================================== Проекты выбранное ==============================================>*/
 .projects-select-wrap .heads__h2 {
   font-size: 30px;
   line-height: 30px;
@@ -1846,6 +1901,7 @@ a:focus {
   font-size: 18px;
   line-height: 27px;
 }
+/*================= Материал =================*/
 .material {
   margin-top: 20px;
 }
@@ -1861,6 +1917,7 @@ a:focus {
   list-style-image: url("../img/icons/li.png");
   color: #0f4d78;
 }
+/*================================================ Этап строительства ===============================>*/
 .level {
   width: 360px;
   overflow: hidden;
@@ -1891,6 +1948,7 @@ a:focus {
 .slick-slide:focus {
   outline: none;
 }
+/*======= слайд стрелки ======*/
 .arrow-slide {
   position: relative;
   float: right;
@@ -1935,6 +1993,7 @@ a:focus {
 .arrow-slide li.next-slide:hover {
   background-position: -146px 0;
 }
+/*=================================================== Продукт ======================================================>*/
 .product-info-box {
   margin-bottom: 60px;
 }
@@ -2006,6 +2065,7 @@ a:focus {
 .product-info-box__more:focus {
   color: #2e2e2e;
 }
+/*=============== Заказать ===========>*/
 .order {
   margin-top: 20px;
   background-color: #fff;
@@ -2050,6 +2110,7 @@ a:focus {
 .order__btn:focus {
   outline: none;
 }
+/*======================================== Характеристика =====================================>*/
 .tabs-product__list {
   border-bottom: 2px solid #a4ce4d;
 }
@@ -2093,6 +2154,7 @@ a:focus {
 .tabs-product__content .arrow-slide {
   margin-top: 20px;
 }
+/*========================================= Техподдержка =============================================>*/
 .support-box__text {
   font-size: 18px;
   margin-bottom: 50px;
@@ -2200,6 +2262,7 @@ a:focus {
   background-color: #0f4d78;
   color: #fff;
 }
+/*======================================== Новости ===================================================>*/
 .news-wrap .row {
   margin-bottom: 69px;
 }
@@ -2223,6 +2286,7 @@ a:focus {
 .news-box .new:nth-child(4n) {
   margin-right: 0px;
 }
+/*======================================== Новости выбранные ( Статья ) ===================================================>*/
 .article {
   font-size: 18px;
   color: #2e2e2e;
@@ -2248,6 +2312,7 @@ a:focus {
   left: 85px;
   top: 25px;
 }
+/*=== кнопка назад ===*/
 .btn-prev {
   width: 223px;
   height: 66px;
@@ -2289,6 +2354,7 @@ a:focus {
   position: relative;
   left: -12px;
 }
+/*=== Slide news ===*/
 .news-slide {
   margin-bottom: 40px;
 }
@@ -2328,6 +2394,7 @@ a:focus {
   outline: none;
   background: transparent;
 }
+/*======================================== Heads Заголовок ===================================================>*/
 .heads__h2 {
   margin-top: 34px;
   margin-bottom: 34px;
@@ -2376,6 +2443,7 @@ a:focus {
   padding-left: 9px;
   text-transform: uppercase;
 }
+/*======================================== Хлеб ===================================================>*/
 .links__list {
   list-style: none;
   font-size: 0;
@@ -2436,6 +2504,7 @@ a:focus {
 .links__link_next span {
   padding-left: 10px;
 }
+/*======================================== 404 ===================================================>*/
 .error-wrap {
   /* OLD - iOS 6-, Safari 3.1-6 */
   /* OLD - Firefox 19- (buggy but mostly works) */
@@ -2497,6 +2566,7 @@ a:focus {
 .error__link:hover {
   text-decoration: none;
 }
+/*============================================= popup form =============================================>*/
 .easypopup-black {
   background: #105281;
   z-index: 10;
@@ -2543,6 +2613,7 @@ a:focus {
 .popup-form-ok button {
   float: none;
 }
+/* ========== @MEDIA ========== */
 @media only screen and (max-width: 1200px) {
   .search {
     width: 95%;
