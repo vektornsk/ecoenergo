@@ -303,6 +303,13 @@ a:focus {
 .menu-open.open .menu-sub {
   display: block;
 }
+@media screen and (max-width: 992px) {
+  .menu-open:hover.menu__item_catalog .menu-sub {
+    position: relative;
+    left: 0;
+    margin-top: 0;
+  }
+}
 .menu-open:hover .menu-sub {
   display: block;
 }
@@ -2907,6 +2914,11 @@ a:focus {
     color: #fff;
     line-height: 60px;
     padding-left: 66px;
+  }
+  .menu-768 .menu-sub {
+    border-left: none;
+    border-right: 8px solid #f85e08;
+    box-shadow: -5px 9px 10px 0px rgba(0, 0, 0, 0.35);
   }
   .menu-768 .menu__item {
     width: 181px;

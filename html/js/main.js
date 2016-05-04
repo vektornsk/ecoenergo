@@ -125,7 +125,7 @@ $(function() {
 			.addClass('active').siblings().removeClass('active');
 	});
 	
-//=== slide-news ===
+/*=== slide-news ===*/
 	
 	if ($('.news-slide').length){
 		
