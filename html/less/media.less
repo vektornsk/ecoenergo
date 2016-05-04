@@ -161,6 +161,239 @@
 		}
 	}
 	
+	
+	/************************* contacts *******************************/
+	
+	.contacts-wrap {
+		.tabs__content {
+			flex-direction: column;
+		}
+		.contacts__left {
+			margin-right: 0;
+		}
+		.address__list {
+			text-align: justify;
+			
+			&:after {
+				content: " ";
+				display: inline-block;
+				width: 100%;
+				height: 0;
+			}
+		}
+		
+		.address__item {
+			display: inline-block;
+		}
+		
+		.call__item {
+			display: inline-block;
+			width: 453px;
+			margin-bottom: 30px;
+			padding-top: 53px;
+			
+			&:first-child {
+				margin-right: 28px;
+				
+				.call__name {
+				}
+			}
+			
+			br {
+				display: none;
+			}
+			
+		}
+		
+		
+		.map {
+			#mapN {
+				width: 942px;
+				height: 465px;
+			}
+		}
+	}
+	
+	/************************* article *******************************/
+		
+	.article {
+
+		.call__item {
+			width: 214px;
+		}
+		.call__name_specialist {
+			
+			&:before {
+				left: 45px;
+			}
+		}
+		.call__name_existence {
+			&:before {
+				left: 63px;
+			}
+		}
+	}
+	
+	/************************* about *******************************/
+	
+	.about-wrap {
+		.article {
+			.call__item {
+				height: 214px;
+				padding-top: 75px;
+			}
+			.call__name {
+				font-size: 20px;
+			}
+		} 
+	}
+	
+	/************************* Этапы строительства  *******************************/
+	
+	
+	.level {
+		width: 300px;
+		
+		.product__name {
+			font-size: 16px;
+		}
+		
+		.product__text {
+			height: 100px;
+			margin-top: -100px;
+			padding: 10px;
+		}
+	}
+	
+	
+	/************************* Патнерам  *******************************/
+	
+	.partners-wrap {
+		
+		.partners__item {
+			margin-bottom: 60px;
+		}
+		
+		.form {
+			flex-direction: column;
+			
+			&__input {
+				display: inline-block;
+				width: 291px;
+			}
+			
+			&__text {
+				width: 601px;
+				height: 250px;
+			}
+			&__btn {
+				margin-top: 10px;
+				margin-right: 14px;
+				margin-bottom: 0;
+			}
+		}
+	}
+	
+	
+	/************************* Бренды *******************************/
+	
+	.brand-box {
+		.brand {
+			margin-right: 77px;
+			margin-bottom: 70px;
+			
+			&:nth-child(3n){
+				margin-right: 0px;
+			}
+		}
+	}
+	
+	/************************* Бренды select *******************************/
+	
+	.brand-s-box {
+		.product {
+			width: 294px;
+		}
+	} 
+	
+	.solution-box {
+		.col-md-8 {
+			width: 59.666667%;
+		}
+	}
+	
+	/************************* Каталог *******************************/
+	.catalog {
+		
+		.catalog_call {
+			.call {
+				&__item {
+					width: 450px;
+					padding-left: 180px;
+				}
+			}
+			.call__name_specialist:before {
+				left: 42px;
+			}
+			.call__name_existence:before {
+				left: 69px;
+			}
+		}
+		
+		
+	}
+	
+	
+	.catalog {
+		
+		&__link__head {
+			font-size: 28px;
+		}
+	}
+	
+	
+	/************************* Каталог - select *******************************/
+	.catalog-s-box {
+		
+		.product {
+			width: 294px;
+		}
+		
+		.product-search .search-box__form .go-form_loop:before {
+			left: 85px;
+		}
+		
+	} 
+	
+	/************************* Карта продукта *******************************/
+	
+	.product-card-wrap {
+		
+		.heads-brand__h2 {
+			font-size: 35px;
+		}
+		
+		.product-info-box__head {
+			font-size: 18px;
+		}
+		
+		.order {
+			padding: 27px 10px 27px 10px;
+			
+			&__btn {
+				width: 192px;
+			}
+		}
+		
+		.tabs-product__content .analog {
+			width: 300px;
+		}
+		.product__text {
+			margin-top: 0;
+			background-color: #0F4E7A;
+		}
+	}
+	
 }
 
 // Medium Devices, Desktops 
@@ -338,6 +571,16 @@
 	.footer {
 		height: 1005px;
 		margin-top: -1005px;
+		
+		.address {
+			padding-top: 0;
+			background-position: center left;
+
+			&__list {
+				margin-top: -25px;
+				margin-left: 380px;
+			}
+		}
 
 	}
 	
@@ -370,15 +613,7 @@
 		
 	}
 	
-	.address {
-		padding-top: 0;
-		background-position: center left;
-		
-		&__list {
-			margin-top: -25px;
-			margin-left: 380px;
-		}
-	}
+
 	
 	
 	/************************* support *******************************/
@@ -452,6 +687,246 @@
 		}
 	}
 	
+	
+	/************************* contacts *******************************/
+	
+	
+	.contacts-wrap {
+		
+		.call__item {
+			width: 343px;
+			padding-top: 40px;
+		}
+		
+		.map {
+
+			#mapN {
+				width: 719px;
+				height: 461px;
+			}
+		}
+	}
+	
+	/************************* article *******************************/
+
+	.article {
+
+		.call__item {
+			display: inline-block;
+			margin-bottom: 0;
+			width: 350px;
+			height: 245px;
+			margin-top: 20px;
+			
+			&:first-child {
+				margin-right: 15px;
+			}
+		}
+		
+		.call__name_specialist {
+
+			&:before {
+				left: 112px;
+			}
+		}
+		.call__name_existence {
+			&:before {
+				left: 131px;
+			}
+		}
+	}
+	
+	/************************* about *******************************/
+
+	.about-wrap {
+		.article {
+			margin-bottom: 20px; //todo
+		}
+	}
+	
+	
+	/************************* Этапы строительства  *******************************/
+
+	.level {
+		width: 340px;
+	}
+	
+	
+	/************************* Патнерам  *******************************/
+
+	.partners-wrap {
+
+		.form {
+			flex-direction: column;
+
+			&__input {
+				width: 217px;
+			}
+
+			&__text {
+				width: 455px;
+				height: 200px;
+			}
+		}
+	}
+	
+	/************************* Бренды *******************************/
+
+	.brand-box {
+		.brand {
+			width: 220px;
+			height: 220px;
+			margin-right: 29px;
+			margin-bottom: 29px;
+
+			&:nth-child(3n){
+				margin-right: 0px;
+			}
+			
+			&__text {
+				padding-top: 180px;
+			}
+		}
+	}
+	
+	
+	
+	/************************* Бренды select *******************************/
+	
+	.brand-s-box {
+		.product {
+			width: 220px;
+			
+			&__text {
+				height: 100px;
+			}
+		}
+	} 
+	
+	.solution {
+		margin-bottom: 40px;
+	}
+
+	.solution-box {
+		.col-md-8 {
+			width: 100%;
+		}
+		
+		.call__item {
+			margin-bottom: 35px;
+			width: 340px;
+			display: inline-block;
+			vertical-align: top;
+			
+			&:first-child {
+				margin-right: 35px;
+			}
+		}
+		
+	}
+	
+	/************************* Фильтр  *******************************/
+	
+	.filter {
+		margin-bottom: 20px;
+		
+		&__item {
+			font-size: 14px;
+		}
+	}
+	
+	.filter-brand__link {
+		font-size: 17px;
+	}
+	
+	
+	/************************* Каталог *******************************/
+	.catalog {
+
+		.catalog_call {
+			.call {
+				&__item {
+					width: 350px;
+					padding-top: 49px;
+				}
+			}
+		}
+	}
+
+	.catalog {
+
+		&__link__head {
+			font-size: 21px;
+			line-height: 26px;
+		}
+		
+		.catalog__list__item {
+			font-size: 15px;
+		}
+	}
+	
+	/************************* Каталог - select *******************************/
+	.catalog-s-box {
+
+		.product {
+			width: 220px;
+			height: 330px;
+		}
+		
+		.product-search .search-box__form {
+			margin-top: 50px;
+		}
+		.product-search .search-box__form .brand-label {
+			top: 40px;
+		}
+		.product-search .search-box__form .power-label {
+			top: 141px;
+		}
+
+		.product-search .search-box__form .go-form_loop:before {
+			left: 45px;
+		}
+		
+		.product-search__head {
+			font-size: 20px;
+		}
+		
+		.product-search .search-box__form .go-form_loop {
+			margin-top: 27px;
+		}
+
+	} 
+	
+	/************************* Карта продукта *******************************/
+
+	.product-card-wrap {
+		
+		.links__item {
+			
+			&:last-child {
+				line-height: 50px;
+				font-size: 13px;
+			}
+		}
+		
+		
+		.product-info-box__more {
+			display: none;
+		}
+		
+		.order {
+			height: auto !important;
+			
+			&__img {
+				margin-right: 25px;
+			}
+		}
+		 .order__btn {
+			display: inline-block !important;
+			vertical-align: middle !important;
+			bottom: 0 !important;
+		}
+	}
 }
 
 // Small Devices, Tablets 

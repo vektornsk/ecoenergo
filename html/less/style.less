@@ -1162,9 +1162,10 @@
 	overflow: hidden;
 	background-color: #fff;
 	margin-bottom: 32px;
+	margin-right: 29px;
 	
-	&:not(:nth-child(4n)){
-		margin-right: 29px;
+	&:nth-child(4n){
+		margin-right: 0px;
 	}
 	
 	&:hover {
@@ -1215,8 +1216,8 @@
 	&__img {
 		background-color: #fff;
 		position: relative;
-		width: 360px;
-		height: 196px;
+		width: 100%;
+		height: 200px;
 		
 		img {
 			position: absolute;
@@ -1247,27 +1248,31 @@
 
 	.product {
 		width: 360px;
-		height: 257px;
+		//height: 257px;
 		background-color: #fff;
+		margin-right: 29px;
 		
-		&:not(:nth-child(3n)){
-			margin-right: 29px;
+		&:nth-child(3n){
+			margin-right: 0px;
 		}
 		
-		&__img {
-			position: absolute;
-			margin: auto;
-			left: 0;
-			right: 0;
-			top: 0;
-			bottom: 0;
-		}
+//		&__img {
+//			position: absolute;
+//			margin: auto;
+//			left: 0;
+//			right: 0;
+//			top: 0;
+//			bottom: 0;
+//		}
 		
 		&__text {
 			width: 100%;
 			padding-right: 20px;
-			position: absolute;
+			//position: absolute;
 			bottom: 0;
+			margin-top: 0;
+			height: 90px;
+			background-color: #0F4E7A;
 		}
 		
 		.search-box__form {
@@ -1464,6 +1469,11 @@
 
 .map {
 	margin-bottom: 45px;
+	
+	#mapN {
+		width: 715px;
+		height: 521px;
+	}
 }
 
 //todo call
@@ -1535,7 +1545,9 @@
 	
 	&__img {
 		max-width: 360px;
-		min-height: 151px;
+		max-height: 151px;
+		width: 100%;
+		height: auto;
 	}
 	
 	&__list {
@@ -1545,10 +1557,10 @@
 		height: 420px;
 		
 		&__head {
-			font-size: 30px;
+			//font-size: 30px;
 			font-family: @font-neris;
 			text-transform: uppercase;
-			line-height: 36px;
+			//line-height: 36px;
 			color: #145581;
 			border-bottom: 2px solid @color-blue-head;
 			padding-bottom: 12px;
@@ -1583,6 +1595,8 @@
 		}
 		
 		&__head {
+			font-size: 30px;
+			line-height: 36px;
 			color: @color-blue-head;
 			&:hover {
 				text-decoration: none;
@@ -1834,7 +1848,7 @@
 		
 		.brand-select {
 			//width: 208px !important;
-			width: 360px !important;
+			width: 100% !important;
 			margin-right: 11px;
 			margin-bottom: 46px;
 		}
@@ -1843,7 +1857,7 @@
 		}
 		
 		.power {
-			width: 360px;
+			width: 100%;
 			margin-right: 0 !important;
 		}
 		
@@ -2129,6 +2143,7 @@
 		margin-bottom: 40px;
 		max-width: 1141px;
 		max-height: 330px;
+		width: 100%;
 	}
 }
 
@@ -2300,6 +2315,7 @@
 	&__img {
 		max-width: 456px;
 		max-height: 342px;
+		width: 100%;
 		overflow: hidden;
 	}
 	
@@ -2710,6 +2726,8 @@
 	height: 66px;
 	background-color: @color-blue-head;
 	text-align: center;
+	margin-left: 15px;
+	margin-top: 40px;
 	margin-bottom: 40px;
 	
 	&:hover {
